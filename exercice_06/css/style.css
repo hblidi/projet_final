@@ -1,0 +1,130 @@
+/* exercice_06 */
+/* par Hadia Blidi */
+/* Le 20-05-2020 */
+
+@font-face{
+    src: url("../fonts/Montserrat.ttf/Comfortaa.ttf");
+    font-family: montserrat-ltght, montserrat, comfortaa
+}
+
+
+.fondrouge{
+    background-image: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
+.fondrgris{
+     background-color:saddlebrown;
+
+
+ }
+.fondbleu{
+    background-color: white;
+
+}
+.fondvert{
+    background-color:white;
+
+}
+.fond{
+    background-color: white;
+
+}
+hr{
+    margin-bottom:30px;
+    margin-top:30px;
+    max-width: 50px;
+    border-width: 3px;
+    border-color: saddlebrown;
+}
+#ligne{
+    margin-bottom:30px;
+    margin-top:30px;
+    max-width: 50px;
+    border-width: 3px;
+    border-color: white;
+
+}
+
+
+.button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: saddlebrown;
+    border-radius: 20px;
+
+}
+.button2{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+#bloc2{
+    background-color: saddlebrown;
+}
+h1{
+    font-family: Candara;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+
+
+}
+h2{
+    font-family: "montserrat-ltght", sans-serif;
+    font-size:25;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding-top: 50px;
+
+}
+h3{
+    font-family: "montserrat-ltght", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
+h4{
+    font-family: "montserrat-ltght", sans-serif;
+    font-size: 12px;
+    padding-top: 2px;
+}
+h5{
+    font-size: 25px;
+    font-family: "montserrat-ltght", sans-serif;
+    text-align: center;
+    color: black;
+    padding-top: 100px;
+}
+p{
+    font-family: "montserrat-ltght", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.far{
+    font-size: 60px;
+    color: saddlebrown;
+    text-align: center;
+    padding-top: 100px;
+}
+.img{
+    width: 100%;
+}

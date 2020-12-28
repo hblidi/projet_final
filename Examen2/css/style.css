@@ -1,0 +1,94 @@
+
+/* Examen 2 */
+/* par Hadia Blidi */
+/* Le 19-10-2020 */
+
+@font-face{
+    src: url("../fonts/Roboto.ttf");
+    font-family: 'Roboto', serif;
+}
+
+@font-face{
+    src: url("../fonts/Anton-Regular.ttf");
+    font-family: 'Anton-Regular', serif;
+
+
+}
+
+
+body{
+    background-color: #000000;
+    font-family: Roboto;
+    color: white;
+
+}
+
+.container{
+    margin: 0;
+}
+
+.canvas{
+    margin-top: 50px;
+    padding-left: 350px;
+}
+
+#formulaire{
+    background-color: #1d1d1d;
+    width: 870px;
+}
+.row{
+    margin-left: 5px;
+}
+
+#sexe{
+    padding-right:90px;
+}
+.rect{
+    padding-left: 93px;
+}
+.flech{
+    padding-left: 93px;
+}
+.mb-3, .my-3 {
+    margin-top: -198px;
+}
+.card-body {
+    padding-left: 73px;
+}
+
+
+span{
+    color: #ef0118;
+}
+
+h4{
+    font-family: "Lucida Console";
+    font-size: 2.5rem;
+    text-align: center;
+}
+h1{
+    font-size: 2.50rem;
+}
+h2{
+    font-size: 1.3rem;
+    font-family: "Roboto Light";
+}
+h1, h2{
+
+   color: white;
+}
+h3{
+    color: #b21f2d;
+    font-size: 0.75rem;
+    padding-left: 3rem;
+}
+p{
+    font-size: 0.75rem;
+}
+hr{
+    margin-bottom:30px;
+    margin-top:30px;
+    max-width: 800px;
+    border-width: 2px;
+    border-color: #ffffff;
+}

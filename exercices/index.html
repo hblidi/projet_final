@@ -1,0 +1,178 @@
+<!--exercice_06-->
+<!--par Hadia Blidi-->
+<!--Le 09-06-2020-->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Menu</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="image/logo-1446293_1920.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav mr-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Menu<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="jardin.html">Jardin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plantesInterieur.html">Plantes d'intérieur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amenagement.html">Aménagement paysager</a></li>
+                </ul>
+            </div>
+            <div class="text-center mr-4">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div class="carousel-caption">
+                <p>Vous désirez approfondir vos connaissances sur le jardinage?</p>
+            </div>
+            <img src="image/lily.jpg" alt="Los Angeles">
+        </div>
+        <div class="carousel-item">
+            <img src="image/roses.jpg" alt="Chicago">
+        </div>
+        <div class="carousel-item">
+            <img src="image/water-lily.jpg" alt="New York">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <div class="leaf">
+            <i class="fas fa-leaf" data-fa-transform="rotate-270"></i>
+        </div>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <div class="leaf">
+        <i class="fas fa-leaf"></i>
+        </div>
+    </a>
+</div>
+
+<!--jumbotron-->
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">  Ouvrir le modal </button>
+<div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+
+
+            <div class="jumbotron">
+                <div class="container-fluid noir">
+                    <div class="row">
+
+                        <div class="col-lg-12 modal-header text-center">
+
+                            <h5 class="modal-title">Soccer Calendrier</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <img class="img-fluid" src="../jumbotron/image/download.png">
+
+                <h1 class="display-4"> Canada Soccer dévoile le calendrier du Championnat canadien 2020!</h1>
+                <div>
+                    <ul>
+                        <p class="lead">Phase de qualification 1 (17-24 juin 2020)
+
+                        <li> Match 1 - FC Edmonton (CanPL) v Pacific FC (CanPL)</li>
+                        <li>Match 2 - Valour FC (CanPL) v Forge FC (CanPL)</li>
+                        <li>Match 3 - AS Blainville (PLSQ) v HFX Wanderers (CanPL)</li>
+                        <li> Match 4 - Masters Futbol Academy (L10) v York9 FC (CanPL)</li>
+                    </ul>
+
+                    <ul>
+                        <p class="lead">Phase des quarts de finale (8-15 juillet 2020)</p>
+
+                        <li>Match 5 - Gagnant Match 1 v Vancouver Whitecaps FC (MLS)</li>
+                        <li>Match 6 - Gagnant Match 2 v Cavarly FC (CanPL)</li>
+                        <li>Match 7 - Gagnant Match 3 v Impact de Montréal (MLS)</li>
+                        <li>Match 8 - Gagnant Match 4 v Toronto FC (MLS)</li>
+                    </ul>
+
+                    <ul>
+                        <p class="lead">Phase de demi-finales (12-19 août 2020)</p>
+
+                        <li>Match 9 - Gagnant Match 5 v Gagnant Match 6</li>
+                        <li>Match 10 - Gagnant Match 8 v Gagnant Match 7</li>
+                        <li>Phase finale (16-23 septembre 2020)</li>
+                        <li>Match 11 – Gagnant Match 9 v Gagnant Match 10</li>
+
+             </div>
+
+
+                <div class="image">
+                    <img class="text-center img-fluid pt-5" src="../jumbotron/image/20190324_CanMNT_XI.jpg"/>
+                </div>
+
+                <hr class="my-4">
+
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+            </div>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="../../Geranium.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100" >
+            <div class="row h-100 text-center align-items-center">
+                <div class="col-12 text-white" >
+                    <h1 class="display-3">Video Header</h1>
+                    <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/09b879714b.js" crossorigin="anonymous"></script>
+<script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+
+/* JeMepresente */
+/* par Hadia Blidi */
+/* Le 22-04-2020 */
+
+body{
+    width: 900px; /*Largeur du site*/
+    margin: auto;
+    text-decoration: none;
+
+}
+
+
+body{
+    background: url("../img/chameau.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+
+}
+
+
+
+/*navigation */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a h1 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 1em;
+
+}
+
+
+li a:hover {
+    background-color: #111;
+}
+. header nav {
+    width: 100%;
+}
+/*                             */
+
+
+.titre {
+    font-family: 'Poiret One', cursive;
+    font-size: 5em;
+    color: lightyellow;
+    margin-top: 0.5em;
+    text-align: center;
+
+}
+.titre:hover{
+    color: darkblue;
+}
+
+h1 :hover{
+    color: darkblue;
+}
+
+
+h1 {
+    font-family: "Roboto Light 300",sans-serif;
+    font-size: 36px;
+    color: lavender;
+
+
+}
+
+p {
+    margin: 2em;
+    text-indent: 3ch;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Roboto Thin 100",sans-serif;
+    font-size: 20px;
+
+}
+a :hover {
+    color: lightskyblue;
+
+}
+a :visited {
+    color: darkblue;
+
+}
+.fasfa-graduation-cap {
+    color: lavender;
+}
+#texte1 {
+    background-color: black;
+ }
+#texte2{
+    background-color: black;
+}
+#texte3{
+    background-color: black;
+}
+#texte4{
+    background-color: black;
+}
+
+/*image */
+.logo img {
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+}
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    margin-top: 2em;
+    box-shadow: darkblue;
+}
+.belleImage {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.belleImage:hover {
+    box-shadow: 0 0 2px 1px rgb(255, 0, 0);opacity:0.2;;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container:hover .image {
+    opacity: 0.3;
+}
+.container:hover .middle {
+    opacity: 1;
+}
+.text {
+    background-color: #061347;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: "Roboto Thin 100",sans-serif;
+}
+
+
+
+/*image */
+
+
+
+
+/*Tableau */
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(235,235,235);
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+}
+
+caption {
+    padding: 10px;
+}
+/*Tableau */

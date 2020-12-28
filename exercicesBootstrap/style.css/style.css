@@ -1,0 +1,19 @@
+.fondrouge{
+    background-color: red;
+    height: 100px;
+}
+.fondbleu{
+    background-color: blue;
+    height: 100px;
+}
+.fondvert{
+    background-color: green;
+    height: 100px;
+}
+.fondjaune{
+    background-color: yellow;
+    height: 100px;
+}
+.titre{
+    margin-top: 10px;
+}

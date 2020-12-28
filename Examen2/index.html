@@ -1,0 +1,348 @@
+<!--Examen 2-->
+<!--par Hadia Blidi-->
+<!--Le 19-10-2020-->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Add meta tags for mobile and IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="js/validation.js"></script>
+    <title> Laboratoire1</title>
+
+</head>
+<body>
+<section>
+    <div class="container pb-5">
+        <div class="row">
+            // début de formulaire //
+                    <div class="col-md-6">
+                        <div class="container-fluid  pt-5" id="formulaire">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Participez à l'avenir de la race humaine </h1>
+                                    <h2>Inscrivez-vous à la prochaine mission de colonisation sur Mars! </h2>
+                                    <hr class="">
+                                    <form onsubmit="return validerFormulaire()">
+
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <h2> Identification <span>*</span> </h2>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3 ">
+                                                        <input id="nom" type="text" maxlength="20" size="10" required>
+                                                        <br>
+                                                        <label for="nom"><p>Nom</p></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <input id="prenom" type="text" maxlength="20" size="16" required>
+                                                    <br>
+                                                    <label for="prenom"><p>Prénom</p></label>
+                                                </div>
+                                            </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-3 ">
+                                                <label for="date-de-naissance"><h2>Date de naissance <span>*</span> </h2></label>
+
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input id="date-de-naissance" name="date-de-naissance" type="date"min="1970-01-01" max="2004-01-01" size="55" required />
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label for="telNo"><h2>Numéro de téléphone<span>*</span></h2></label>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+
+                                                    <select id="codeRegional" name="telNo1" type="tel" required>
+                                                        <option value="819">819</option>
+                                                        <option value="418">418</option>
+                                                        <option value="514">514</option>
+                                                    </select>
+
+
+                                                    <label for="codeRegional"><p>Code régional</p></label>
+
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <input id="telNo" name="telNo" type="tel"  size="17" required>
+                                                    <label for="telNo"><p>Numéro de téléphone</p></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-4">
+                                            <div class="col-md-3">
+                                                <h2>E-mail <span>*</span></h2>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="email" id="email"  placeholder="myname@example.com" size="40" required>
+                                                <label for="email"><p>exemple@exemple.com</p></label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-4">
+                                            <div class="col-md-3">
+                                                <h2>Adresse <span>*</span></h2>
+                                            </div>
+
+                                                <div class="col-md-6">
+                                                    <input id="adresse"  type="text" name="adresse" size="40" required><br>
+                                                    <label for="adresse" ><p>Numéro de porte</p></label>
+                                                </div>
+
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-12 offset-3">
+                                                    <input id="appartement"  type="text" name="adresse" size="40"><br>
+                                                    <label for="appartement" ><p>Numéro d'appartement</p></label>
+                                                </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                                <div class="col-md-3 offset-3">
+                                                    <input id="ville"  type="text" name="ville" size="17" required>
+                                                    <br>
+                                                    <label for="ville" ><p>ville</p></label>
+                                                </div>
+                                            <div class="col-md-3 pl-4">
+
+                                                <input id="etat"  type="text" name="etat" size="17" required>
+                                                <br>
+                                                <label for="etat" ><p>État/province</p></label>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 " >
+                                                <label for="sexe">Sexe <span>*</span></label>
+                                            </div>
+                                            <div class="col-md-3 " >
+                                                <select id="sexe">
+                                                    <option value="noir"></option>
+                                                    <option value="noir">masculin</option>
+                                                    <option value="blanc">feminin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-5">
+                                            <div class="col-md-3 " >
+                                                <label for="metier" >Métier <span>*</span></label>
+                                            </div>
+                                            <div class="col-md-3 " >
+                                                <input id="metier" type="text" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-5">
+                                            <div class="col-md-3">
+                                                <label for="presentation"><h2>Présentation</h2></label>
+
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" id="presentation" rows="6" ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-5 pb-5">
+                                            <div class="col-md-2 offset-3">
+                                                <input class="p-2" type="submit" value="Soumettre ma candidature" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            // fin de formulaire //
+
+            // début du Canvas //
+                    <div class="col-md-6  canvas">
+                            <canvas id="myCanvas" width="500" height="500" style="border:1px solid black"></canvas>
+                            <script>
+
+                                let canvas = document.getElementById("myCanvas");
+
+                                let ctx = canvas.getContext("2d");
+
+
+                                let grad = ctx.createRadialGradient(250, 250, 200, 250, 250, 90);
+                                grad.addColorStop(0,"#000000");
+                                grad.addColorStop(1,"#ee7f1d");
+
+                                ctx.fillStyle = "#000000";
+                                ctx.fillRect(0,0,700,700);
+
+                                ctx.beginPath();
+                                ctx.arc(250,250,150,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = grad;
+                                ctx.fill();
+
+                                ctx.font = "40px Anton";
+                                ctx.fillStyle= "black"
+                                ctx.fillText("MARS", 210, 260);
+
+
+                                ctx.beginPath();
+                                ctx.arc(50,50,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(430,55,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(270,59,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(200,65,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(100,60,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(35,200,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(450,450,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(435,465,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(35,465,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(50,430,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(70,470,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(30,270,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(250,465,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+
+                                ctx.beginPath();
+                                ctx.arc(300,465,1,0,2*Math.PI);
+                                ctx.stroke();
+                                ctx.fillStyle = "#ffffffff";
+                                ctx.fill();
+                            </script>
+            // fin du Canvas //
+
+            // début de la Forme //
+                                <div class="flech">
+                                        <svg height="200" width="500">
+                                            <polygon points="140,10 290,290 5,290" style="fill:white;stroke:white;stroke-width:3"></polygon>
+                                        </svg>
+                                        <svg height="200" width="250" class="rect">
+                                            <rect width="100" height="300" style="fill: white;stroke-width:3;stroke: white"></rect>
+                                        </svg>
+                                        <h4>Destination</h4>
+                                </div>
+                    </div>
+            // fin de la Forme //
+
+            // début paypal //
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-10 col-md-5">
+                        <div class="card bg-light mb-3 text-center ">
+                            <div class="card-body">
+                                <style >
+                                    /* Media query for mobile viewport */
+                                    @media screen and (max-width: 400px) {
+                                        #paypal-button-container {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    /* Media query for desktop viewport */
+                                    @media screen and (min-width: 400px) {
+                                        #paypal-button-container {
+                                            width: 250px;
+                                        }
+                                    }
+                                </style>
+                                <!-- Set up a container element for the button -->
+                                <div id="paypal-button-container"></div>
+
+                                <!-- Include the PayPal JavaScript SDK -->
+                                <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+
+                                <script>
+                                    // Render the PayPal button into #paypal-button-container
+                                    paypal.Buttons().render('#paypal-button-container');
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            // fin  paypal //
+        </div>
+    </div>
+</section>
+
+
+</body>
+<script src="https://kit.fontawesome.com/09b879714b.js" crossorigin="anonymous"></script>
+<script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

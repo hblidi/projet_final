@@ -1,0 +1,153 @@
+/* exercice_jumbotron */
+/* par Hadia Blidi */
+/* Le 10-06-2020 */
+
+
+.parallax1 {
+    /* L’image du Parallax */
+    background-image: url("../image/Photo-paralax-dec-bac-informatique-02.jpg");
+    /* L’hauteur du Parallax */
+    min-height: 300px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: 50% -40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    /* L’image du Parallax */
+    background-image: url("../image/Photo-paralax-informatique-coding.jpg");
+    /* L’hauteur du Parallax */
+    min-height: 300px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: 50% -40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    /* L’image du Parallax */
+    background-image: url("../image/Photo-paralax-informatique-mainframe-03.jpg");
+    /* L’hauteur du Parallax */
+    min-height: 300px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: 50% -40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titre1{
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+.carreJaune{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Khand',sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-top: 20%;
+    background-color: rgba(255,255,0,.75);
+
+}
+
+.info{
+    padding-top:10%;
+}
+
+.zone2{
+    padding-top: 10%;
+
+}
+.img{
+   padding-right: 30%;
+}
+.text1{
+    padding-right: 40%;
+}
+
+h1{
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: #2c2c2c;
+    line-height: 1.4em;
+}
+h2{
+    font-size: 70px;
+    line-height: 70px;
+    font-family: 'Khand',sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+h3{
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: white;
+    line-height: 1.4em;
+}
+a{
+    text-transform: uppercase;
+    color: white;
+}
+.il-zon3{
+    font-family: Ubuntu;
+    font-size: 18px;
+    line-height: 1.4em;
+    color: white;
+}
+.ul-zon3{
+    padding-left: 0%;
+}
+.P-zon3{
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'Khand',sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: white;
+    padding-top: 20%;
+
+}
+.fas{
+    color: #e84819;
+}
+.btn{
+    background-color: #e84819;
+}
+.p-large{
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'Khand',sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.p-medium{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Khand',sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-top: 40px;
+}
+
+.text{
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: #2c2c2c;
+    line-height: 1.4em;
+}
