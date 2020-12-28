@@ -1,0 +1,88 @@
+/* projet final */
+/* par Hadia Blidi */
+/* Le 19-06-2020 */
+
+@font-face{
+    src: url("../fonts/Montserrat-Thin.ttf");
+    font-family: Montserrat-Thin;
+
+}
+
+@font-face{
+    src: url("../fonts/static/Comfortaa-Medium.ttf");
+    font-family: Comfortaa;
+
+}
+
+
+h1{
+    font-family: Comfortaa;
+    font-size: 2rem;
+    color: white;
+}
+h2{
+    font-family: Comfortaa;
+    font-size: 1rem;
+}
+p{
+    font-family: Comfortaa;
+    font-size: 1rem;
+    color: white;
+}
+h5{
+    font-family: Comfortaa;
+    font-size: 1rem;
+}
+.fas{
+    color: #d3d9df;
+    font-size: 36px;
+}
+.banniere{
+    background-color: #2b2b2b;
+}
+.logo{
+    width: 160px;
+    height: 60px;
+
+}
+#btntest{
+    background: #3E63AB;
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color:black;
+    font-size: 30px;
+    font-family: Montserrat-Thin;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#btntest #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+#btntest:hover {
+    background: transparent;
+}
+
+#btntest:hover #circle {
+    height: 50px;
+    width: 150px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+}
