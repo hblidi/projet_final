@@ -162,6 +162,7 @@ h5{
     padding-bottom: 30px;
 
 }
+
 .services{
     font-family: Aladin;
     font-size: 3.5rem;
@@ -528,7 +529,7 @@ footer{
 }
 .svg{
     padding-bottom: 10px;
-    z-index: -99;
+    z-index: -9;
 }
 
 .titrefooter{
