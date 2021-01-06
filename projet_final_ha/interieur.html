@@ -4,21 +4,20 @@
 
 <!DOCTYPE html>
 <html lang="fr-ca">
+<meta charset="UTF-8">
+<title>Déco&Plante</title>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <meta charset="UTF-8">
-    <title>Démo Bootstrap</title>
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Déco&Plante</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
+    <link rel="stylesheet" href="style.css/style_interieur.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 </head>
 <body>
@@ -29,10 +28,10 @@
         <div class="col-md-12">
             <div class="menu_effects fixed-top">
                 <ul id="menu-main-menu" class="menu">
-                    <li><a href="index.html" class="text-capitalize">accueil</a></li>
+                    <li class="current_item text-capitalize"><a href="index.html" class="text-capitalize">accueil</a></li>
                     <li><a href="interieur.html" class="text-capitalize">Plante interieur</a></li>
-                    <li class="current_item text-capitalize" ><a href="exterieur.html">plante exterieur</a></li>
-                    <li><a href="#" class="text-capitalize">plante aquatique</a></li>
+                    <li><a href="exterieur.html" class="text-capitalize">plante exterieur</a></li>
+                    <li><a href="aquatique.html" class="text-capitalize">plante aquatique</a></li>
                     <li><a href="contact.html" class="text-capitalize">contact</a></li>
                 </ul>
             </div>
@@ -40,10 +39,14 @@
     </div>
 </div>
 <div class="container-fluid">
-    <div class="row">
-            <div class="col-md-12 interieur">
-            <h1>PLANTE INTERIEUR</h1>
-
+    <div class="row bacimage">
+            <div class="col-md-12">
+                <div class="main">
+                    <div class="d1"><h5>PLANTE INTERIEUR</h5></div>
+                    <div class="d2"></div>
+                    <div class="d3"></div>
+                    <div class="d4"></div>
+                </div>
             </div>
     </div>
 </div>
@@ -109,13 +112,10 @@
     </div>
 </div>
 
-
 <div class="container-fluid pt-5">
     <div class="row">
-
-
         <div class="col-md-6 textSalon">
-            <h2 class="titreSalon">cuisine</h2>
+            <h2 class="titreSalon">salle de bain</h2>
             <p class="pr-5 pl-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                 type specimen book. It has survived not only five centuries..</p>
@@ -124,40 +124,61 @@
     </div>
 </div>
 
-<footer>
-    <div class="container pt-5 pb-5 ">
-        <div class="row">
-            <div class="col-md-12">
-                <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br><button>CLIQUEZ ICI POUR LE SOUMETTRE</button></h5>
 
-            </div>
+
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="interieur.html"><i class="fas fa-angle-double-up"></i></a>
         </div>
-        <div class="row">
-            <div class="col-md-3 adresse">
-                <ul>
-                    <li>Deco&Plante</li>
-                    <li>111, rue St-Charles, Montréal</li>
-                    <li>Tél.: (450) 555-7711</li>
-                    <li>Sans-frais: 1-877-430-8888</li>
-                    <li>Fax.: (450) 333-3759</li>
-                    <li>info@decoplante.com</li>
-                </ul>
-            </div>
-            <div class="col-md-3 pt-5">
-                <a><i class="fab fa-facebook fa-fa"></i></a>
-                <a><i class="fab fa-instagram-square fa-fa"></i></a>
-                <a><i class="fab fa-twitter-square fa-fa"></i></a>
+    </div>
+</div>
 
-            </div>
-            <div class="col-md-3">
+<footer class="pt-5 ">
+    <div class="container-fluid pt-5 ">
+        <div class="row footer">
+            <div class="col-md-12">
+                <div class="container pt-5 pb-5 ">
+                    <div class="row">
+                        <div class="col-md-3 adresse">
 
+                            <ul>
+                                <li>Deco&Plante</li>
+                                <li>111, rue St-Charles, Montréal</li>
+                                <li>Tél.: (450) 555-7711</li>
+                                <li>Sans-frais: 1-877-430-8888</li>
+                                <li>Fax.: (450) 333-3759</li>
+                                <li>info@decoplante.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 pt-5 pr-5 ">
+                            <ul>
+
+                                <li><i class="fas fa-users fa-cart-plus"></i>Qui nous sommes</li>
+                                <li><i class="fas fa-cart-plus pr-2"></i>Boutique en ligne</li>
+                                <li><i class="fas fa-check-double fa-cart-plus"></i>Réalisations</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-center pt-5">
+                            <a><i class="fab fa-facebook fa-fa pr-2"></i></a>
+                            <a><i class="fab fa-instagram-square fa-fa pr-2"></i></a>
+                            <a><i class="fab fa-twitter-square fa-fa"></i></a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br></h5>
+                            <div class="bt text-center"><button><h2>SOUMETTRE</h2></button></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </footer>
 <script src="js/app.js"></script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="https://kit.fontawesome.com/09b879714b.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>

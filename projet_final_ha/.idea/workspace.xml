@@ -13,8 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -32,7 +33,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../paiementEnLigne/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,6 +61,13 @@
       <workItem from="1608950586523" duration="2088000" />
       <workItem from="1608982260761" duration="17714000" />
       <workItem from="1609160347969" duration="9245000" />
+      <workItem from="1609174661369" duration="929000" />
+      <workItem from="1609244712675" duration="11660000" />
+      <workItem from="1609335716899" duration="23678000" />
+      <workItem from="1609759237052" duration="331000" />
+      <workItem from="1609761560845" duration="9422000" />
+      <workItem from="1609784735738" duration="16432000" />
+      <workItem from="1609935642000" duration="7976000" />
     </task>
     <servers />
   </component>
@@ -66,12 +75,19 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="680" y="255" key="FileChooserDialogImpl" timestamp="1609169928456">
+    <state x="707" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609428537814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="707" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1609428537814" />
+    <state x="680" y="249" key="FileChooserDialogImpl" timestamp="1609845504819">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="680" y="249" key="FileChooserDialogImpl/-1920.0.1536.813/1920.0.1920.1040/0.0.1920.1016@0.0.1920.1016" timestamp="1609800680196" />
     <state x="2600" y="255" key="FileChooserDialogImpl/-1920.0.1536.813/1920.0.1920.1040/0.0.1920.1016@1920.0.1920.1040" timestamp="1608909418956" />
-    <state x="680" y="255" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609169928456" />
+    <state x="680" y="255" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609257001575" />
+    <state x="2600" y="255" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1609273228889" />
     <state x="531" y="235" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1608736635919" />
+    <state x="680" y="249" key="FileChooserDialogImpl/1920.0.1920.1016/0.0.1920.1016/-1920.0.1536.824@0.0.1920.1016" timestamp="1609845504819" />
     <state x="680" y="255" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1608939041647" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609171608242">
       <screen x="0" y="0" width="1920" height="1040" />

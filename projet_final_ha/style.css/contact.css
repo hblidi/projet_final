@@ -1,0 +1,51 @@
+
+
+body{
+    background-image: url("../image/1194724.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+h1{
+    font-family: Aladin;
+    font-size: 3rem;
+    color: #132402;
+}
+span{
+    color: #f12131;
+}
+.bordure{
+    border-radius: 25px;
+    padding: 8px;
+}
+.arum{
+    width: 550px;
+    height: 450px;
+}
+.boutonsoumettre{
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 125px;
+    background: linear-gradient(45deg, #27361d, #2e4022);
+    box-shadow:  6px -6px 12px #23311a,
+    -6px 6px 12px #334726;
+    color: white;
+    font-size: 20px;
+
+
+}
+.cart_con{
+    background-color: #d1cac2;
+    margin-top: 100px;
+    margin-bottom: 162px;
+}
+hr{
+    margin-bottom:30px;
+    margin-top:30px;
+    max-width: 1500px;
+    border-width: 2px;
+    border-color: #203b06;
+
+}

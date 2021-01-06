@@ -1,3 +1,7 @@
+
+
+
+
 function validerFormulaire(){
 let codeRegional = document.getElementById("codeRegional");
 

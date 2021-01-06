@@ -4,35 +4,33 @@
 
 <!DOCTYPE html>
 <html lang="fr-ca">
+<title>Déco&Plante</title>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <meta charset="UTF-8">
-    <title>Démo Bootstrap</title>
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Déco&Plante</title>
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+    <link rel="stylesheet" href="style.css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 
 </head>
 <body class="container_contact">
-
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
             <div class="menu_effects fixed-top">
                 <ul id="menu-main-menu" class="menu">
-                    <li><a href="index.html" class="text-capitalize">accueil</a></li>
+                    <li class="current_item text-capitalize"><a href="index.html" class="text-capitalize">accueil</a></li>
                     <li><a href="interieur.html" class="text-capitalize">Plante interieur</a></li>
-                    <li class="current_item text-capitalize" ><a href="exterieur.html">plante exterieur</a></li>
-                    <li><a href="#" class="text-capitalize">plante aquatique</a></li>
+                    <li><a href="exterieur.html" class="text-capitalize">plante exterieur</a></li>
+                    <li><a href="aquatique.html" class="text-capitalize">plante aquatique</a></li>
                     <li><a href="contact.html" class="text-capitalize">contact</a></li>
                 </ul>
             </div>
@@ -41,7 +39,7 @@
 </div>
 <div class="container-fluid pb-5">
     <div class="row">
-        <div class="col-md-12 contact">
+        <div class="col-lg-12 col-md-12 col-sm-12 col contact">
             <h1>Nous joindre</h1>
             <p>
                 Vous avez un projet de rénovation en tête?<br>
@@ -52,58 +50,106 @@
     </div>
 </div>
 
-<div class="container cart_con">
-    <div class="row ">
-        <div class="col-md-12 ">
-            <h2 class="pb-3 text-center">Parlez-nous de votre projet</h2>
-            <form>
-                <label for="name">Nom</label><br>
-                <input type="text" id="name" name="name" placeholder="Nom" maxlength="100" required><br>
-
-                <label for="Age">Âge</label><br>
-                <input type="text" id="Age" placeholder="Âge" required><br>
+<div class="container cart_con pb-5">
+    <div class="row">
 
 
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <hr>
+            <h1 class="pb-3 text-center pt-5">Parlez-nous  de votre projet</h1>
+            <hr>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <form onsubmit="return validerFormulaire()">
+                                        <div class="row">
+                                            <div class="offset-2 col-lg-3 col-md-6 pt-3 col-sm-3">
+                                                <label for="name" ><h2>Nom<span>*</span></h2></label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-3 pt-3 col-sm-3">
+                                                <input type="text" id="name" name="name" placeholder="Nom" maxlength="100" class="bordure" size="38" required><br>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="offset-2 col-lg-3 pt-3 col-sm-3 ">
+                                                <label for="Prenom"><h2>Prénom<span>*</span></h2></label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 pt-3 col-sm-3">
+                                                <input type="text" id="Prenom" placeholder="Prénom" required class="bordure" size="38">
+                                            </div>
+                                        </div>
 
 
 
-                <div class="card bg-light mb-3 mt-5">
-                    <div class="card-body">
-
-                        <p>Est ce que le chat est vacciné</p>
-                        <input type="radio" id="oui" name="gender" value="oui">
-                        <label for="oui">Oui</label><br>
-                        <input type="radio" id="non" name="gender" value="non">
-                        <label for="non">Non</label><br>
-                    </div>
-                </div><br>
-                <p>couleur du chat</p>
-                <select name="couleur" id="couleur">
-                    <option value="noir">Noir</option>
-                    <option value="blanc">Blanc</option>
-                    <option value="brun">Brun</option>
-                    <option value="mixte">Mixte</option>
-
-                </select>
-                <br>
-                <div class="card bg-light mb-3 mt-5">
-                    <div class="card-body">
+                            <div class="row pt-5">
+                                <div class="offset-2 col-lg-3 pt-3 col-sm-3">
+                                    <label for="telNo" class="ptext pt-2"><h2>téléphone</h2></label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 pt-3 col-sm-3">
+                                    <select id="codeRegional" name="telNo1" type="tel"  required class="bordure">
+                                        <option value="819">819</option>
+                                        <option value="418">418</option>
+                                        <option value="514">514</option>
+                                    </select>
+                                    <input id="telNo" name="telNo" type="tel"  size="27" required class="bordure">
+                                </div>
+                            </div>
 
 
-                        <label for="oui">Domestique</label>
-                        <input type="radio" id="domestique" name="gender" value="domestique">
-                        <br>
-                        <input type="radio" id="race" name="gender" value="race">
-                        <label for="non">Racé</label><br>
+                            <div class="row">
+                                <div class="offset-2 col-lg-3 pt-3 col-sm-3">
+                                    <h2>E-mail <span>*</span></h2>
+                                </div>
+                                <div class="col-lg-6 col-md-6 pt-3 col-sm-3">
+                                    <input type="email" id="email"  placeholder="myname@example.com" size="40" required class="bordure">
+                                </div>
+                            </div>
+
+
+                            <div class="row pt-5">
+                                <div class="offset-2 col-lg-3" >
+                                    <label for="categorie"><h2>choisir une catégorie<span>*</span></h2></label>
+                                </div>
+                                <div class="col-md-6" >
+                                    <select id="categorie" class="bordure">
+                                        <option value=""></option>
+                                        <option value="Cuisine">Cuisine</option>
+                                        <option value="salon">Salon</option>
+                                        <option value="Chambre">Chambre</option>
+                                        <option value="salleDeBain">salle de bain</option>
+                                        <option value="jardins">terrasse et jardins </option>
+                                        <option value="Entree">Entrée</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="offset-2 col-lg-3 pt-3 col-sm-3">
+                                    <label for="message"><h2>Message</h2></label>
+
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-md-3 pt-3 col-sm-3 pt-3">
+                                    <div class="form-group">
+                                        <textarea class="form-control bordure" id="message" rows="6"  placeholder="Message" ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <hr>
+                            <div class="row text-center">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <input type="submit" value="soumettre" class="boutonsoumettre text-capitalize" id="bouton">
+                                </div>
+                            </div>
+                            <hr>
+                        </form>
                     </div>
                 </div>
-
-
-                <label for="text">lieu de naissance</label><br>
-                <input type="text" id="text" placeholder="lieu" required><br>
-                <br>
-                <input type="submit" value="soumettre" class="bouton">
-            </form>
+            </div>
         </div>
     </div>
 </div>
@@ -114,42 +160,54 @@
 
 
 
-
-<footer>
-    <div class="container pt-5 pb-5 ">
-        <div class="row">
+<footer class="pt-5 ">
+    <div class="container-fluid pt-5 ">
+        <div class="row footer">
             <div class="col-md-12">
-                <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br><button>CLIQUEZ ICI POUR LE SOUMETTRE</button></h5>
+                <div class="container pt-5 pb-5 ">
+                    <div class="row">
+                        <div class="col-md-3 adresse">
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 adresse">
-                <ul>
-                    <li>Deco&Plante</li>
-                    <li>111, rue St-Charles, Montréal</li>
-                    <li>Tél.: (450) 555-7711</li>
-                    <li>Sans-frais: 1-877-430-8888</li>
-                    <li>Fax.: (450) 333-3759</li>
-                    <li>info@decoplante.com</li>
-                </ul>
-            </div>
-            <div class="col-md-3 pt-5">
-                <a><i class="fab fa-facebook fa-fa"></i></a>
-                <a><i class="fab fa-instagram-square fa-fa"></i></a>
-                <a><i class="fab fa-twitter-square fa-fa"></i></a>
+                            <ul>
+                                <li>Deco&Plante</li>
+                                <li>111, rue St-Charles, Montréal</li>
+                                <li>Tél.: (450) 555-7711</li>
+                                <li>Sans-frais: 1-877-430-8888</li>
+                                <li>Fax.: (450) 333-3759</li>
+                                <li>info@decoplante.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 pt-5 pr-5 ">
+                            <ul>
 
-            </div>
-            <div class="col-md-3">
+                                <li><i class="fas fa-users fa-cart-plus"></i>Qui nous sommes</li>
+                                <li><i class="fas fa-cart-plus pr-2"></i>Boutique en ligne</li>
+                                <li><i class="fas fa-check-double fa-cart-plus"></i>Réalisations</li>
 
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-center pt-5">
+                            <a><i class="fab fa-facebook fa-fa pr-2"></i></a>
+                            <a><i class="fab fa-instagram-square fa-fa pr-2"></i></a>
+                            <a><i class="fab fa-twitter-square fa-fa"></i></a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br></h5>
+                            <div class="bt text-center"><button><h2>SOUMETTRE</h2></button></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </footer>
+
 <script src="js/app.js"></script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="js/formulaire.js"></script>
 <script src="https://kit.fontawesome.com/09b879714b.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 
 </body>

@@ -5,50 +5,76 @@
 
 <!DOCTYPE html>
 <html lang="fr-ca">
+<meta charset="UTF-8">
 <head>
+    <title>Déco&Plante</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <meta charset="UTF-8">
-    <title>Démo Bootstrap</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Déco&Plante</title>
-   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-
-
-
-
-
 </head>
 <body>
+<!--menu mobile -->
+<div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <div class="device">
+        <div class="container">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                    <li>
+                        <a href="#">Speaker &amp; Writer</a>
+                    </li>
+                    <li>
+                        <a href="#">Work</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
 
-
+        </div>
+    </div>
+</div>
+<div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
                 <div class="menu_effects fixed-top">
                      <ul id="menu-main-menu" class="menu">
-                        <li><a href="index.html" class="text-capitalize">accueil</a></li>
+                        <li class="current_item text-capitalize"><a href="index.html" class="text-capitalize">accueil</a></li>
                         <li><a href="interieur.html" class="text-capitalize">Plante interieur</a></li>
-                        <li class="current_item text-capitalize" ><a href="exterieur.html">plante exterieur</a></li>
-                        <li><a href="#" class="text-capitalize">plante aquatique</a></li>
+                        <li><a href="exterieur.html" class="text-capitalize">plante exterieur</a></li>
+                        <li><a href="aquatique.html" class="text-capitalize">plante aquatique</a></li>
                          <li><a href="contact.html" class="text-capitalize">contact</a></li>
                      </ul>
                 </div>
         </div>
     </div>
 </div>
+</div>
 
-
-<div class="container-fluid">
+<!--carousel mobile -->
+<div class="container-fluid carousel-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-lg-12">
             <div id="demo" class="carousel slide" data-ride="carousel">
+
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -59,56 +85,86 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="carousel-caption">
-                            <div class="text"><div class="titre">DECO&<br>VÉGETALE</div><h1>PLANTE INTERIEUR</h1></div>
 
-                        </div>
-                        <img src="image/image1.jpg" alt="ivy">
+                        <img src="image/plants-4572694.jpg" alt="Los Angeles" width="1100" height="500"><div><h5>DÉCO&PLANTE</h5></div>
                     </div>
                     <div class="carousel-item">
-
-                        <div class="text"><div class="titre">DECO&<br>VÉGETALE</div><h1>PLANTE AQUATIQUE </h1></div>
-                        <img src="image/image2.jpg" alt="nature">
+                        <img src="image/plants-4572694.jpg" alt="Chicago" width="1100" height="500">
                     </div>
                     <div class="carousel-item">
-
-                        <img src="image/image3.jpg" alt="garden">
-                        <div class="text"><div class="titre">DECO&<br>VÉGETALE</div><h1>PLANTE EXTERIEUR </h1></div>
-
+                        <img src="image/plants-4572694.jpg" alt="New York" width="1100" height="500">
                     </div>
-
                 </div>
 
                 <!-- Left and right controls -->
                 <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <div class="leaf">
-                        <input type="checkbox">
-                    </div>
+                    <span class="carousel-control-prev-icon"></span>
                 </a>
                 <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <div class="leaf">
-                        <input type="checkbox">
-                    </div>
+                    <span class="carousel-control-next-icon"></span>
                 </a>
             </div>
         </div>
     </div>
 </div>
 
+<div class="container-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="row bacimage">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 col-12">
+               <div class="main">
+                    <div class="d1"><h5>DÉCO&PLANTE</h5></div>
+                    <div class="d2"></div>
+                    <div class="d3"></div>
+                     <div class="d4"></div>
+               </div>
+          </div>
+    </div>
+</div>
 
-<div class="container-fluid pt-5">
-    <div class="row">
-        <div class="col-md-6 cercle">
+
+<div class="container-fluid pt-5 services">
+    <div class="row pt-5 pb-5">
+        <div class="col-lg-2 col-md-2 col-sm-12 cercle">
             <svg height="300" width="300">
                 <circle cx="150" cy="150" r="100" stroke="" stroke-width="3" fill="#677E52"/>
                 <circle cx="250" cy="150" r="50" stroke="" stroke-width="3" fill="#B0CC99" />
             </svg>
         </div>
 
-        <div class="col-md-6 ">
-         <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-             type specimen book. It has survived not only five centuries..</h2>
+        <div class="col-lg-2 col-md-2 col-sm-12">
+            <h5 class="services">Nos services</h5>
+         <h2>
+             Nous nous engageons à concevoir et à réaliser des projets et des aménagements durables,
+             qui allient design, esthétisme et facilité d’entretien. Notre équipe d’experts en design végétal saura
+             cerner vos besoins et vous proposer un projet répondant à vos critères.</h2>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 cercle">
+            <svg height="300" width="300">
+                <circle cx="150" cy="150" r="100" stroke="" stroke-width="3" fill="#677E52"/>
+                <circle cx="250" cy="150" r="50" stroke="" stroke-width="3" fill="#B0CC99" />
+            </svg>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-12">
+            <h5 class="services">Nos services</h5>
+            <h2>
+                Nous nous engageons à concevoir et à réaliser des projets et des aménagements durables,
+                qui allient design, esthétisme et facilité d’entretien. Notre équipe d’experts en design végétal saura
+                cerner vos besoins et vous proposer un projet répondant à vos critères.</h2>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 cercle">
+            <svg height="300" width="300">
+                <circle cx="150" cy="150" r="100" stroke="" stroke-width="3" fill="#677E52"/>
+                <circle cx="250" cy="150" r="50" stroke="" stroke-width="3" fill="#B0CC99" />
+            </svg>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-12  textP">
+            <h5 class="services">Nos services</h5>
+            <h2>
+                Nous nous engageons à concevoir et à réaliser des projets et des aménagements durables,
+                qui allient design, esthétisme et facilité d’entretien. Notre équipe d’experts en design végétal saura
+                cerner vos besoins et vous proposer un projet répondant à vos critères.</h2>
         </div>
 
     </div>
@@ -116,7 +172,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="parallax">
 
                 <div class="offset-4 col-md-3 caption-content"><h5>Intégrer les plantes dans son décor </h5></div>
@@ -128,30 +184,77 @@
 
 <div class="container-fluid barricon">
     <div class="row text-center" >
-        <div class="col-md-3">
-            <a class="icon" href="index.html"><div><input class="icon" type="checkbox"> <i class="fas fa-shower"></i></div></a>
+        <div class="col-lg-3 col-md-12  col-sm-12 col-12">
+            <a class="icon" href="index.html">
+                <div><input class="icon" type="checkbox">
+                    <div class="position"><i class="fas fa-tint ficon"></i></div>
+                </div>
+            </a>
         </div>
-        <div class="col-md-3">
-            <a class="icon" href="index.html"><div><input class="icon" type="checkbox"><i class="fas fa-seedling"></i></div></a>
+        <div class=" col-lg-3 col-md-12 col-sm-12 col-12">
+            <a class="icon" href="index.html">
+                <div><input class="icon" type="checkbox">
+                    <div class="position"><i class="fas fa-seedling ficon"></i></div>
+                </div>
+            </a>
         </div>
-        <div class="col-md-3">
-            <a class="icon" href="index.html"><div><input class="icon" type="checkbox"><i class="fas fa-tree"></i></div></a>
+        <div class="col-lg-3 col-md-12  col-sm-12 col-12">
+            <a class="icon" href="index.html">
+                <div><input class="icon" type="checkbox">
+                    <div class="position"><i class="fas fa-tree ficon"></i></div>
+                </div>
+            </a>
         </div>
-        <div class="col-md-3">
-            <a class="icon" href="index.html"><div><input class="icon" type="checkbox"><i class="fas fa-sun"></i></div></a>
+        <div class="col-lg-3 col-md-12  col-sm-12 col-12">
+            <a class="icon" href="index.html">
+                <div><input class="icon" type="checkbox">
+                    <div class="position"><i class="fas fa-sun ficon"></i></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="parallax">
+
+                <div class="offset-4 col-md-3 caption-content"><h5>CRÉATION</h5></div>
+
+            </div>
         </div>
     </div>
 </div>
 
+<div class="container-fluid arbre">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+
+            <canvas id='canv'></canvas><h5 > PLANTE LUMINEUSE</h5>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center pb-5">
+            <iframe loading="lazy" src="https://player.vimeo.com/video/253160999"></iframe>
+        </div>
+    </div>
+
+
+</div>
+
+
+
 <div class="container-fluid troisimage ">
     <div class="row">
-        <div class="col-md-12">
-            <h5>Suspension Plante Macrame</h5>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h5>Suspension Plante Macramé</h5>
         </div>
     </div>
     <div class="row ">
 
-        <div class=" offset-1 col-md-3">
+        <div class=" offset-1 col-md-3 col-sm-12 col-12">
 
             <h3 class="pb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -161,7 +264,7 @@
                <img src="image/71BE3GXs9+L._AC_SY679_.jpg">
 
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12 col-12">
 
             <h3 class="pb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -171,7 +274,7 @@
                 <img src="image/51waCIaHsdL._AC_.jpg">
 
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12 col-12">
 
             <h3 class="pb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -187,7 +290,7 @@
 
 <div class="container-fluid pt-5 pb-5">
     <div class="row">
-        <div class="col-md-12 w3-container">
+        <div class="col-md-12 col-sm-12 col-12 w3-container">
             <div class="w3-content" style="max-width:1200px">
                 <img class="mySlides" src="image/images%20(1).jpg" style="width:100%;display:none">
                 <img class="mySlides" src="image/comment-decorer-sa-maison-avec-plantes-interieures.jpg" style="width:100%">
@@ -208,44 +311,61 @@
         </div>
     </div>
 </div>
-
-
-
-<footer>
-    <div class="container pt-5 pb-5 ">
-        <div class="row">
-            <div class="col-md-12">
-                <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br><button>CLIQUEZ ICI POUR LE SOUMETTRE</button></h5>
-
-            </div>
+<div class="container text-center">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-12">
+            <i class="fas fa-angle-double-up"></i>
         </div>
-        <div class="row">
-            <div class="col-md-3 adresse">
-                <ul>
-                    <li>Deco&Plante</li>
-                    <li>111, rue St-Charles, Montréal</li>
-                    <li>Tél.: (450) 555-7711</li>
-                    <li>Sans-frais: 1-877-430-8888</li>
-                    <li>Fax.: (450) 333-3759</li>
-                    <li>info@decoplante.com</li>
-                </ul>
-            </div>
-            <div class="col-md-3 pt-5">
-                <a><i class="fab fa-facebook fa-fa"></i></a>
-                <a><i class="fab fa-instagram-square fa-fa"></i></a>
-                <a><i class="fab fa-twitter-square fa-fa"></i></a>
+    </div>
+</div>
 
-            </div>
-            <div class="col-md-3">
 
+
+<footer class="pt-5 ">
+    <div class="container-fluid pt-5 ">
+        <div class="row footer">
+            <div class="col-md-12 col-sm-12 col-12">
+                <div class="container pt-5 pb-5 ">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 col-12 adresse">
+
+                            <ul>
+                                <li>Deco&Plante</li>
+                                <li>111, rue St-Charles, Montréal</li>
+                                <li>Tél.: (450) 555-7711</li>
+                                <li>Sans-frais: 1-877-430-8888</li>
+                                <li>Fax.: (450) 333-3759</li>
+                                <li>info@decoplante.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-12 pt-5 pr-5 ">
+                            <ul>
+
+                                <li><i class="fas fa-users fa-cart-plus"></i>Qui nous sommes</li>
+                                <li><i class="fas fa-cart-plus pr-2"></i>Boutique en ligne</li>
+                                <li><i class="fas fa-check-double fa-cart-plus"></i>Réalisations</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-12 text-center pt-5">
+                            <a><i class="fab fa-facebook fa-fa pr-2"></i></a>
+                            <a><i class="fab fa-instagram-square fa-fa pr-2"></i></a>
+                            <a><i class="fab fa-twitter-square fa-fa"></i></a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-12">
+                            <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br></h5>
+                            <div class="bt text-center"><button class="but-soum-foot"><h2>SOUMETTRE</h2></button></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </footer>
-<script src="js/app.js"></script>
-<script src="https://kit.fontawesome.com/09b879714b.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<script src="https://kit.fontawesome.com/09b879714b.js" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>

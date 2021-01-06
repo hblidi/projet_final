@@ -3,116 +3,55 @@
 <!--Le 17-06-2020-->
 <!DOCTYPE html>
 <html lang="fr-ca">
+<meta charset="UTF-8">
 <head>
-    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
     <title> FormulaireEnvoye</title>
+
 </head>
 <body>
-<<<<<<< HEAD
-<div class="container-fluid banier">
-        <div class="row">
-            <div class="col-md-12"><h1>Deco&plante</h1>
-                <canvas id='canvas'></canvas>
+<div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <div class="device">
+        <div class="container">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                    <li>
+                        <a href="#">Speaker &amp; Writer</a>
+                    </li>
+                    <li>
+                        <a href="#">Work</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
 
-            </div>
         </div>
+    </div>
 </div>
-=======
-<div class="Menu" style="--hue: 78.58093004893483">
-    <input class="Menu__toggle" id="Menu-toggle" type="checkbox"/>
-    <label class="Menu__toggle-label" for="Menu-toggle"></label>
-    <label class="Menu__toggle-label Menu__toggle-label--closer" for="Menu-toggle">
-        <svg class="Menu__icon" preserveAspectRatio="xMinYMin" viewBox="0 0 24 24">
-            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
-        </svg>
-        <svg class="Menu__icon" preserveAspectRatio="xMinYMin" viewBox="0 0 24 24">
-            <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
-        </svg>
-    </label>
-    <ul class="Menu__content">
-        <li class="Menu__item" style="--x: 29; --y: 17;"><a class="Menu__link" href="#HOME">HOME</a></li>
-        <li class="Menu__item" style="--x: 73; --y: 33;"><a class="Menu__link" href="#ABOUT">POUR HOMME</a></li>
-        <li class="Menu__item" style="--x: 28; --y: 59;"><a class="Menu__link" href="#CONTACT">POUR FEMME</a></li>
-        <li class="Menu__item" style="--x: 67; --y: 62;"><a class="Menu__link" href="#WORK">POUR ENFANTS</a></li>
-    </ul>
-</div>
-<svg style="position: absolute; left: 100%">
-    <defs>
-        <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="BLUR"></feGaussianBlur>
-            <feColorMatrix in="BLUR" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="GOO"></feColorMatrix>
-            <feBlend in="SourceGraphic" in2="goo"></feBlend>
-        </filter>
-    </defs>
-</svg>
-<header>
-
-<div class="container-fluid menulunette d-none d-sm-none d-md-none d-lg-block d-xl-block">
-  <div class="row teal borderYtoX">
-
-      <a class="navbar-brand" href="#">Logo</a>
-      <nav class="navbar navbar-expand-lg  ml-auto">
-
-
-        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-            <ul id="menu-deroulant">
-                <li><a class="menu text-capitalize" href="index.html">accueil</a></li>
-                <li><a class="menu text-capitalize" href="homme.html">Pour Homme</a>
-                    <div class="sousmenuH subnav-content">
-                        <ul>
-                            <li><a href="#" class="sousmenu">Mattblack</a><img src="image/lunetteHomme/haggar_hac101_chocolate_1_1.jpg" alt="" class="imagemenu"></li>
-                            <li><a href="#" class="sousmenu">Solander</a></li>
-                            <li><a href="#" class="sousmenu">Polar</a></li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li><a class="menu text-capitalize">Pour Femme</a>
-                    <div class="sousmenuH">
-                        <ul>
-                            <li><a href="#" class="sousmenu">lien sous menu 1</a></li>
-                            <li><a href="#" class="sousmenu">lien sous menu 1</a></li>
-                            <li><a href="#" class="sousmenu">lien sous menu 1</a></li>
-                            <li><a href="#" class="sousmenu">lien sous menu 1</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="menu text-capitalize" href="enfants.html">Pour Enfants</a>
-                    <div class="sousmenuH">
-                        <ul>
-                            <li><a href="#" class="sousmenu">lien sous menu 1</a></li>
-                            <li><a href="#" class="sousmenu">lien sous menu 1</a></li>
-                            <li><a href="#" class="sousmenu">lien sous menu 1</a></li>
-                            <li><a href="#" class="sousmenu">lien sous menu 1</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="menu text-capitalize">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-  </div>
-</div>
-</header>
-
-
->>>>>>> parent of 227979c... projet_final_ha
-
-
-
-
-
-
-
 
 
 
 </body>
-
+<script src="js.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/09b879714b.js" crossorigin="anonymous"></script>
 <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
 </body>

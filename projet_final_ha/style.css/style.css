@@ -1,5 +1,7 @@
 
-
+/* projet final */
+/* par Hadia Blidi */
+/* Le 19-06-2020 */
 @font-face{
     src: url("../fonts/Aladin-Regular");
     font-family: Aladin-Regular;
@@ -22,6 +24,7 @@ input[type="checkbox"]{
     background: linear-gradient(145deg, #d8d8d4, #fffffb);
     box-shadow:  20px 20px 66px #ccccc8,
     -20px -20px 66px #ffffff;
+
 }
 input[type="checkbox"].icon{
     height: 150px;
@@ -34,22 +37,8 @@ input[type="checkbox"].icon{
 
 
 }
-.interieur{
-    background-image: url("../image/image1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 1920px;
-    height: 1080px;
-}
-.exterieur{
-    background-image: url("../image/image3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 1920px;
-    height: 1080px;
-}
+
+
 .contact{
     background-image: url("../image/image4.png");
     background-repeat: no-repeat;
@@ -79,11 +68,12 @@ input[type="checkbox"].icon{
     box-shadow: 0px 26px 90px -14px rgba(0,71,214,0.18);
     padding-bottom: 20px;
 }
-.container_contact{
-    background-image: url("../image/image5.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: left;
+
+.caption-content{
+    background-color: rgba(255, 255, 255, 0.77);
+    border: 0px solid #ffffff;
+    padding-top: 40px;
+
 }
 
 .interieur h1{
@@ -113,14 +103,13 @@ input[type="checkbox"].icon{
     text-align: justify;
     font-family: Roboto;
     font-size: 1.5rem;
+    padding-top: 180px;
 
 }
 
 
-.fas{
-    font-size: 4rem;
-    margin-left: -93px;
-}
+
+
 
 .barricon{
     background-color: #677E52;
@@ -135,10 +124,7 @@ input[type="checkbox"].icon{
     text-align: center;
 
 }
-.cercle{
-    padding-left: 300px;
-    padding-bottom: 20px;
-}
+
 .text {
     font-family: YesevaOne-Regular;
      position: absolute;
@@ -157,13 +143,12 @@ h1{
 
   }
 h2{
-    font-size: 1.5rem;
-    font-family: Corbel;
-    padding-right: 230px;
-    padding-top: 95px;
+    font-size: 1rem;
+    font-family: Roboto;
+
 }
 h3{
-    font-family: Corbel;
+    font-family: Roboto;
     font-size: 1.5rem;
 
 }
@@ -172,9 +157,14 @@ h5{
     font-size: 4.5rem;
     text-align: center;
     color: #132402;
-    padding-bottom: 100px;
-}
+    padding-bottom: 30px;
 
+}
+.services{
+    font-family: Aladin;
+    font-size: 3.5rem;
+    color:#132402;
+}
 
 .troisimage{
     padding-right: 20px;
@@ -186,15 +176,27 @@ h5{
 a{
     color: #324026;
 }
-.carousel-indicators li{
-    background-color: #324026;
-}
-input, i{
+
+.icon{
     text-align: center;
     color: #314226;
     font-size: 3rem;
 
 }
+.ficon{
+    font-size: 4rem;
+    margin-left: -52px;
+    z-index: 9;
+    margin-right: -53px;
+}
+a:hover{
+    color: #012d04;
+}
+.position{
+    margin-top: -115px;
+    margin-bottom: -25px;
+}
+
 
 .parallax {
     /* The image used */
@@ -218,7 +220,7 @@ input, i{
     left: 0;
     width: 25px;
     height: 0px;
-    background: #89725B;
+    background: #B0CC99;
     /*border: 1px solid #000;*/
     content: '';
     margin-right: 10px;
@@ -226,6 +228,7 @@ input, i{
     -webkit-transition: height 0.3s, opacity 0.8s, -webkit-transform 0.2s;
     -moz-transition: height 0.3s, opacity 0.8s, -moz-transform 0.2s;
     transition: height 0.3s, opacity 0.8s, transform 0.2s;
+    border-radius: 25px;
 }
 
 .menu_effects a:hover::after,
@@ -258,8 +261,9 @@ input, i{
 .current-menu-item:hover::after {
     height: 25px;
     width: 25px;
+    border-radius: 25px;
     opacity: 0.99;
-    background: #B7CA79;
+    background: #4f5531;
 }
 
 /* Menu set up */
@@ -314,44 +318,416 @@ input, i{
 #menu-main-menu {
     float:right;
     padding: 10px 40px 0 0;
+
 }
 #menu-main-menu li a {
-    font-family: Aladin-Regular;
-    color: #000;
+    font-family: "Yeseva One";
+    color: #f6f8f4;
     text-decoration: none;
 
 }
+.fixed-top{
+    background-color: #244524;
+}
+
+/*menu mobil */
+/* Main menu positionning */
+.main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: #FFF;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .375s;
+}
+
+.main-nav.is-open {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+}
+
+/* Yellow band effect */
+.main-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: #859235;
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s;
+}
+
+.main-nav.is-open::before {
+    transform: skew(-14deg) translateX(0);
+}
+
+/* Skewing effect on menu links */
+.main-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    height: 93%; /* Should be 100%, but we have a notice message :D */
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg);
+}
+
+.main-nav li {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+    transform: skew(16deg);
+}
+
+/* Apparition effect on links */
+.main-nav a {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.main-nav.is-open a {
+    opacity: 1;
+    transform: translateY(0);
+}
+.main-nav li:nth-child(1) a {
+    transition: all 275ms 175ms
+}
+.main-nav li:nth-child(2) a {
+    transition: all 275ms 225ms
+}
+.main-nav li:nth-child(3) a {
+    transition: all 275ms 275ms
+}
+.main-nav li:nth-child(4) a {
+    transition: all 275ms 325ms
+}
+.main-nav li:nth-child(5) a {
+    transition: all 275ms 375ms
+}
+
+
+/* Decoration */
+.main-nav ul,
+.main-nav li {
+    list-style: none;
+    padding: 0;
+}
+.main-nav a {
+    display: block;
+    padding: 12px 0;
+    color: #f6f7f8;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-family: "Yeseva One";
+}
+
+/* Burger Style: @see: https://codepen.io/CreativeJuiz/full/oMZNXy */
+.open-main-nav {
+    position: absolute;
+    top: 15px;
+    padding-top: 20px;
+    right: 15px;
+    z-index: 1000;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+.open-main-nav:focus {
+    outline: none;
+}
+.burger {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 0 auto;
+    background: #122b02;
+    transform: skew(5deg);
+    transition: all .275s;
+}
+
+.burger:after,
+.burger:before {
+    content: '';
+    display: block;
+    height: 100%;
+    background: #122b02;
+    transition: all .275s;
+}
+
+.burger:after {
+    transform: translateY(-12px) translateX(-2px) skew(-20deg);
+}
+
+.burger:before {
+    transform: translateY(-16px) skew(-10deg);
+}
+
+/* Toggle State part */
+.is-open .burger {
+    transform: skew(5deg) translateY(-8px) rotate(-45deg);
+}
+
+.is-open .burger:before {
+    transform: translateY(0px) skew(-10deg) rotate(75deg);
+}
+
+.is-open .burger:after {
+    transform: translateY(-12px) translateX(10px) skew(-20deg);
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pies de page  */
+
+
 
 footer{
-  background-color: #677E52;
+  background-image: url("../image/footer.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 586px;
 }
-button{
-    padding: 15px 32px;
-    text-align: center;
+.footer{
+    padding-top: 224px;
+}
+.but-soum-foot{
+    padding: 10px 25px;
     text-decoration: none;
     border-radius: 125px;
     background: linear-gradient(45deg, #27361d, #2e4022);
     box-shadow:  6px -6px 12px #23311a,
     -6px 6px 12px #334726;
+    z-index: 99;
 }
-.fixed-top{
-    background-color: #6c6b6b;
+.but-soum-foot h2{
+    color: white;
 }
+.svg{
+    padding-bottom: 10px;
+    z-index: -99;
+}
+
 .titrefooter{
-    font-family: Aladin;
-    font-size: 2rem;
-    color: #d3d9df;
+    font-family:"Yeseva One";
+    font-size: 1.5rem;
+    color: #fdfbfb;
 }
 
 .adresse ul, li {
+    font-family: "Montserrat";
+    font-size: 18px;
    list-style: none;
-    font-family: "Roboto Light";
-    color: #012304;
+    color: #fafcfa;
+
 
 }
-.fa-fa{
-    font-size: 50px;
+.fa-cart-plus{
+    font-size: 19px;
+    color: #f6f6f6;
+
 }
+ .fab{
+    font-size: 50px;
+    z-index: auto;
+    color: #fdfcfc;
+
+}
+ .fa-angle-double-up{
+     font-size: 33px;
+ }
+
+/* animation arbre */
+.arbre {
+    background: hsl(103, 14%, 81%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right top, hsla(45, 55%, 22%, 0.5), hsl(133, 78%, 11%));
+    background-image:-moz-linear-gradient(to right top, hsla(57, 78%, 25%, 0.5), hsl(32, 65%, 21%));
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+iframe{
+    width: 640px;
+    height: 360px;
+
+}
+
+
+/* animation image background */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.d1 {
+    position: absolute;
+    background-image: url(../image/plants-4572694.jpg);
+    background-size: 2700px 1500px;
+
+    height: 30vh;
+    width: 15vw;
+
+    background-position: 0 50%;
+
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    animation: dd1 10s 1, dd12 10s 1;
+    animation-delay: 4s, 14s;
+}
+.d2 {
+    position: absolute;
+    background-image: url(../image/plants-4572694.jpg);
+    background-size: 2700px 1500px;
+
+    height: 50vh;
+    width: 25vw;
+
+    background-position: -10vw 50%;
+    left: 10vw;
+
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd2 10s 2;
+    animation-delay: 4s;
+}
+.d3 {
+    position: absolute;
+    background-image: url(../image/plants-4572694.jpg);
+    background-size: 2700px 1500px;
+    overflow: hidden;
+
+    height: 100vh;
+    width: 40vw;
+    left: 25vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: -35vw 50%;
+
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: dd3 10s 2;
+    animation-delay: 4s;
+}
+.d4 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url(../image/plants-4572694.jpg);
+    background-size: 2700px 1500px;
+
+    height: 80vh;
+    width: 25vw;
+    left: 60vw;
+    background-position: -70vw 50%;
+
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd4 10s 2;
+    animation-delay: 4s;
+}
+.d1 h5{
+    font-family: Aladin;
+    font-size: 4.5rem;
+    text-align: center;
+    color: #284b03;
+    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-left: 20px;
+
+}
+.bacimage{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+@keyframes dd1 {
+    0% {
+    }
+    50% {
+        width: 95vw;
+    }
+}
+@keyframes dd12 {
+    0% {
+    }
+    50% {
+        background-position: Calc(0vw - 40px) 50%;
+    }
+}
+@keyframes dd2 {
+    0% {
+    }
+    50% {
+        background-position: Calc(-10vw - 40px) 50%;
+    }
+}
+@keyframes dd3 {
+    0% {
+    }
+    50% {
+        background-position: Calc(-35vw - 40px) 50%;
+    }
+}
+@keyframes dd4 {
+    0% {
+    }
+    50% {
+        background-position: Calc(-70vw - 40px) 50%;
+    }
+}
+
+
+@media only screen and (max-width: 731px){
+    svg{
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .services{
+        background-color: #5d714a;
+    }
+    .icon{
+       padding-top: 50px;
+    }
+}
+
+
+
+
+
 
 
 
