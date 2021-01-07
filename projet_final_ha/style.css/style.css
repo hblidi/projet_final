@@ -204,10 +204,6 @@ a:hover{
 .parallax {
     /* The image used */
     background-image: url("../image/b566aa16e2a3de5041e47af7a67d331a.jpg");
-
-    /* Set a specific height */
-    min-height: 500px;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -713,7 +709,7 @@ iframe{
 }
 
 
-@media only screen and (max-width: 875px){
+@media only screen and (max-width: 320px){
     svg{
         text-align: center;
         margin-left: 50px;
@@ -726,6 +722,26 @@ iframe{
     .position {
         margin-top: -112px;
         margin-bottom: 75px;
+    }
+    .adresse ul, li{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 2rem;
+    }
+    .fab{
+        font-size: 1.5rem;
+    }
+     .macrame{
+        width: 250px;
+        height: 250px;
+    }
+    footer{
+        background-image: url("../image/footer2.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+
     }
 }
 

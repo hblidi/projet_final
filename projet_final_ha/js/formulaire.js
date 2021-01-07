@@ -15,43 +15,47 @@ function validerFormulaire(){
             codePermise = true;
     }
     if(codePermise === false){
-        alert("le code régional non permis !!!");
+        alert("le catégorie non permis !!!");
     }
-    return codePermise;
-}
+
+    let categorie = document.getElementById("categorie");
+
+    let categoriepPermise= false;
 
 
-function validerFormulaire2(){
+    switch (categorie.value) {
+        case "Cuisine" :
+            categoriepPermise = true;
+            break;
+        case "Salon" :
+            categoriepPermise = true;
+            break;
+        case "Chambre" :
+            categoriepPermise = true;
+            break;
+        case "salle de bain":
+            categoriepPermise = true;
+            break;
+        case "terrasse et jardins" :
+            categoriepPermise = true;
+            break;
+        case "Entrée" :
+            categoriepPermise = true;
+            break;
+        case "Autre" :
+            categoriepPermise = true;
 
-let categorie = document.getElementById("categorie");
+    }
+    if(categoriepPermise === false){
+        alert("le catégorie non permis !!!");
+    }
 
-let categoriepPermise= false;
+    if(codePermise && categoriepPermise){
+        return true;
+    }
+    else{
+        return false;
 
+    }
 
-switch (categorie.value) {
-    case "Cuisine" :
-        categoriepPermise = true;
-        break;
-    case "Salon" :
-        categoriepPermise = true;
-        break;
-    case "Chambre" :
-        categoriepPermise = true;
-        break;
-    case "salle de bain":
-        categoriepPermise = true;
-        break;
-    case "terrasse et jardins" :
-        categoriepPermise = true;
-        break;
-    case "Entrée" :
-        categoriepPermise = true;
-        break;
-    case "Autre" :
-        categoriepPermise = true;
-
-}
-if(categoriepPermise === false){
-    alert("le catégorie non permis !!!");
-}
 }
