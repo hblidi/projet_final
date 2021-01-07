@@ -131,15 +131,7 @@
 }
 
 
-button{
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 125px;
-    background: linear-gradient(45deg, #27361d, #2e4022);
-    box-shadow:  6px -6px 12px #23311a,
-    -6px 6px 12px #334726;
-    z-index: 99;
-}
+
 button h2{
     color: white;
 }

@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../wamp64/www/portefolio/monPortefolio/wp-content/themes/monpremiertheme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,6 +43,7 @@
       <updated>1609273230210</updated>
       <workItem from="1609273231545" duration="3199000" />
       <workItem from="1609797379626" duration="14482000" />
+      <workItem from="1610043795100" duration="618000" />
     </task>
     <servers />
   </component>

@@ -17,39 +17,115 @@
 </head>
 
 
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="menu_effects fixed-top">
-                <ul id="menu-main-menu" class="menu">
-                    <li class="current_item text-capitalize"><a href="index.html" class="text-capitalize">accueil</a></li>
-                    <li><a href="interieur.html" class="text-capitalize">Plante interieur</a></li>
-                    <li><a href="exterieur.html" class="text-capitalize">plante exterieur</a></li>
-                    <li><a href="aquatique.html" class="text-capitalize">plante aquatique</a></li>
-                    <li><a href="contact.html" class="text-capitalize">contact</a></li>
+<!--menu mobile -->
+<div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <div class="device">
+        <div class="container">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" class="text-capitalize">accueil</a>
+                    </li>
+                    <li>
+                        <a href="interieur.html" class="text-capitalize">Plante interieur</a>
+                    </li>
+                    <li>
+                        <a href="exterieur.html" class="text-capitalize">plante exterieur</a>
+                    </li>
+                    <li>
+                        <a href="aquatique.html" class="text-capitalize">plante aquatique</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="text-capitalize">contact</a>
+                    </li>
                 </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="menu_effects fixed-top">
+                    <ul id="menu-main-menu" class="menu">
+                        <li><a href="index.html" class="text-capitalize">accueil</a></li>
+                        <li><a href="interieur.html" class="text-capitalize">Plante interieur</a></li>
+                        <li class="current_item text-capitalize"><a href="exterieur.html" class="text-capitalize">plante exterieur</a></li>
+                        <li><a href="aquatique.html" class="text-capitalize">plante aquatique</a></li>
+                        <li><a href="contact.html" class="text-capitalize">contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid">
-        <div class="row bacimage">
-            <div class="col-md-12">
-                <div class="main">
-                    <div class="d1"><h5>PLANTE EXTERIEUR</h5></div>
-                    <div class="d2"></div>
-                    <div class="d3"></div>
-                    <div class="d4"></div>
+
+
+<!--carousel mobile -->
+<div class="container-fluid carousel-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/plants-4572694.jpg" alt="Los Angeles" width="1920" height="1080">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plants-4572694.jpg" alt="Chicago" width="1920" height="1080">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plants-4572694.jpg" alt="New York" width="1920" height="1080">
+                    </div>
                 </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <div><h5>DÉCO&PLANTE</h5></div>
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
+    </div>
 </div>
+
+<div class="container-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="row bacimage">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 col-12">
+            <div class="main">
+                <div class="d1"><h5>DÉCO&PLANTE</h5></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="d4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <div class="container-fluid pt-5">
     <div class="row">
-        <div class="col-md-6 textSalon">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 textSalon">
             <h2 class="titreSalon">terrasse & jardin</h2>
 
             <p class="pr-5 pl-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -57,7 +133,7 @@
                 type specimen book. It has survived not only five centuries..</p>
         </div>
 
-        <div class="col-md-6 w3-container">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 w3-container">
             <div class="w3-content" style="max-width:1200px">
                 <img class="mySlides" src="image/terrasse-jardin-naturel-veranda-styledevie-fr-serapportanta-amenager-un-petit-jardin-de-10m2.jpg" style="width:100%;display:none">
                 <img class="mySlides" src="image/sika.jpg" style="width:100%">
@@ -85,8 +161,8 @@
 <div class="container-fluid pt-5">
     <div class="row">
 
-        <div class="offset-1 col-md-3 entree"><img src="image/entree.jpg"></div>
-        <div class="offset-2 col-md-4 textSalon">
+        <div class="offset-1 col-xl-3 col-lg-3 col-md-12 col-sm-12 entree"><img src="image/entree.jpg"></div>
+        <div class="offset-2 col-xl-4 col-lg-4 col-md-12 col-sm-12 textSalon">
             <h2 class="titreSalon pt-5">Entrée</h2>
             <p class="pr-5 pl-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a

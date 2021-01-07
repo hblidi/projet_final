@@ -14,7 +14,15 @@
 
 
 
-
+button{
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 125px;
+    background: linear-gradient(45deg, #27361d, #2e4022);
+    box-shadow:  6px -6px 12px #23311a,
+    -6px 6px 12px #334726;
+    z-index: 99;
+}
 
 input[type="checkbox"]{
     height: 50px;
@@ -736,17 +744,20 @@ iframe{
         width: 250px;
         height: 250px;
     }
-    footer{
-        background-image: url("../image/footer2.jpg");
-        background-repeat: no-repeat;
-        background-position:center;
-        background-size: cover;
+    footer .footer{
+    background-color: #132402;
 
     }
 }
 
 
+@media screen and (min-width: 668px) and (max-width: 990px) {
 
+    .position {
+        margin-top: -112px;
+        margin-bottom: 75px;
+    }
+}
 
 
 
