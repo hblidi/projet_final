@@ -221,6 +221,7 @@ a:hover{
     padding-bottom: 200px;
 }
 
+
 .menu_effects a::after {
     position: absolute;
     top: 0;
@@ -272,7 +273,6 @@ a:hover{
     opacity: 0.99;
     background: #4f5531;
 }
-
 /* Menu set up */
 .menu {
     position: relative;
@@ -744,10 +744,7 @@ iframe{
         width: 250px;
         height: 250px;
     }
-    footer .footer{
-    background-color: #132402;
 
-    }
 }
 
 
@@ -758,9 +755,149 @@ iframe{
         margin-bottom: 75px;
     }
 }
+@media only screen and (max-width: 320px) {
+
+    .bordure{
+        font-size: 9px;
+    }
+    h2{
+        font-size: 0.75rem;
+
+    }
+    h5, h1{
+        font-size: 1.5rem;
+    }
+
+    h5{
+        text-align: center;
+        color: #14551d;
+        padding-top: 30px;
+
+
+    }
+    .open-main-nav{
+        font-size: 9px;
+    }
+    .adresse, .icon-list{
+        margin-left: 60px;
+
+    }
+    button {
+        padding: 3px 14px;
+        color: white;
+
+    }
+    .bt{
+        margin-bottom: 100px;
+    }
+
+    footer{
+        background-image: url("../image/footer3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .footer{
+        padding-top: 0px;
+        padding-bottom: 200px;
+    }
+    li{
+        font-size: 10px;
+    }
+    .fa-cart-plus {
+        font-size: 10px;
+
+    }
+    .titrefooter {
+
+        font-size: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .bordure{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .adresse, .icon-list{
+        margin-left: 180px;
+
+    }
+    li, .fa-cart-plus{
+        font-size: 25px;
+    }
+    .titrefooter{
+        font-size: 30px;
+    }
+    button {
+        padding: 19px 47px;
+        color: white;
+
+    }
+
+    footer{
+        background-image: url("../image/footer3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .boutonsoumettre{
+        padding: 19px 39px;
+        font-size: 32px;
+    }
+}
 
 
 
+
+.ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 2em;
+    color: #fffcfc;
+}
+
+.ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+}
+
+.ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #fdfdfd;
+    transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+}
+
+.ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+}
 
 
 

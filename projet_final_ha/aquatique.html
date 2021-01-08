@@ -5,6 +5,8 @@
 
 <body>
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css/style.css">
@@ -14,43 +16,147 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
-
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="menu_effects fixed-top">
-                <ul id="menu-main-menu" class="menu">
-                    <li><a href="index.html" class="text-capitalize">accueil</a></li>
-                    <li><a href="interieur.html" class="text-capitalize">Plante interieur</a></li>
-                    <li><a href="exterieur.htm">plante exterieur</a></li>
-                    <li class="current_item text-capitalize"><a href="aquatique.html" class="text-capitalize">plante aquatique</a></li>
-                    <li><a href="contact.html" class="text-capitalize">contact</a></li>
+<!--menu mobile -->
+<div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <div class="device">
+        <div class="container">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" class="text-capitalize">accueil</a>
+                    </li>
+                    <li>
+                        <a href="interieur.html" class="text-capitalize">Plante interieur</a>
+                    </li>
+                    <li>
+                        <a href="exterieur.html" class="text-capitalize">plante exterieur</a>
+                    </li>
+                    <li>
+                        <a href="aquatique.html" class="text-capitalize">plante aquatique</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="text-capitalize">contact</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
+
         </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row bacimage">
-        <div class="col-md-12">
-            <div class="main">
-                <div class="d1"><h5>PLANTE AQUATIQUE</h5></div>
-                <div class="d2"></div>
-                <div class="d3"></div>
-                <div class="d4"></div>
+
+
+<div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="menu_effects fixed-top">
+                    <ul id="menu-main-menu" class="menu">
+                        <li><a href="index.html" class="text-capitalize">accueil</a></li>
+                        <li><a href="interieur.html" class="text-capitalize">Plante interieur</a></li>
+                        <li><a href="exterieur.htm">plante exterieur</a></li>
+                        <li class="current_item text-capitalize"><a href="aquatique.html" class="text-capitalize">plante aquatique</a></li>
+                        <li><a href="contact.html" class="text-capitalize">contact</a></li>
+                    </ul>
+                    <div class="col-lg-12 pt-3">
+                        <h6 class="ml5 ">
+                              <span class="text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="letters letters-left">DÉCO</span>
+                                <span class="letters ampersand">&amp;</span>
+                                <span class="letters letters-right">PLANTE</span>
+                                <span class="line line2"></span>
+                              </span>
+                        </h6>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<!--carousel mobile -->
+<div class="container-fluid carousel-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/plants-4572694.jpg" alt="Los Angeles" width="1920" height="1080">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plants-4572694.jpg" alt="Chicago" width="1920" height="1080">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plants-4572694.jpg" alt="New York" width="1920" height="1080">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <div><h5>DÉCO&PLANTE</h5></div>
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="container-fluid">
+        <div class="row bacimage">
+            <div class="col-md-12">
+                <div class="main">
+                    <div class="d1"><h5>PLANTE AQUATIQUE</h5></div>
+                    <div class="d2"></div>
+                    <div class="d3"></div>
+                    <div class="d4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="offset-xl-2 col-lg-12 col-md-12 col-sm-12">
+            <h6 class="ml5">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left">DÉCO</span>
+    <span class="letters ampersand">&amp;</span>
+    <span class="letters letters-right">PLANTE</span>
+    <span class="line line2"></span>
+  </span>
+            </h6>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid pt-5">
     <div class="row">
-        <div class="col-md-6 textSalon">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-1 textSalon">
             <h2 class="titreSalon">Plante hydroponique</h2>
 
             <p class="pr-5 pl-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -58,7 +164,7 @@
                 type specimen book. It has survived not only five centuries..</p>
         </div>
 
-        <div class="col-md-6 w3-container">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 w3-container">
             <div class="w3-content" style="max-width:1200px">
                 <img class="mySlides" src="image/déco-plante-aquatique-en-tasse-en-verre.jpg" style="width:100%;display:none">
                 <img class="mySlides" src="image/image2.jpg" style="width:100%">
@@ -86,8 +192,8 @@
 <div class="container-fluid pt-5">
     <div class="row">
 
-        <div class="offset-1 col-md-3 entree"><img src="image/Bassin.jpg"></div>
-        <div class="offset-2 col-md-4 textSalon">
+        <div class="offset-1 col-xl-3 col-lg-3 col-md-12 col-sm-12 entree"><img src="image/Bassin.jpg"></div>
+        <div class="offset-2 col-xl-4 col-lg-4 col-md-12 col-sm-12 textSalon">
             <h2 class="titreSalon pt-5">Bassin</h2>
             <p class="pr-5 pl-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -99,7 +205,7 @@
 <div class="container pt-5">
     <div class="row">
 
-        <div class="col-md-12 text-center">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
             <img src="image/61u4YZL4atL._AC_SX522_.jpg">
         </div>
 
@@ -109,53 +215,52 @@
 
 <div class="container-fluid pt-5">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+            <a href="aquatique.html"><i class="fas fa-angle-double-up"></i></a>
         </div>
     </div>
 </div>
 
+
 <footer class="pt-5 ">
-    <div class="container-fluid pt-5 ">
-        <div class="row footer">
-            <div class="col-md-12">
-                <div class="container pt-5 pb-5 ">
-                    <div class="row">
-                        <div class="col-md-3 adresse">
+    <div class="container-fluid pt-5 pl-5 ">
+        <div class="row footer ">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 adresse">
 
-                            <ul>
-                                <li>Deco&Plante</li>
-                                <li>111, rue St-Charles, Montréal</li>
-                                <li>Tél.: (450) 555-7711</li>
-                                <li>Sans-frais: 1-877-430-8888</li>
-                                <li>Fax.: (450) 333-3759</li>
-                                <li>info@decoplante.com</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 pt-5 pr-5 ">
-                            <ul>
+                        <ul>
+                            <li>Deco&Plante</li>
+                            <li>111, rue St-Charles, Montréal</li>
+                            <li>Tél.: (450) 555-7711</li>
+                            <li>Sans-frais: 1-877-430-8888</li>
+                            <li>Fax.: (450) 333-3759</li>
+                            <li>info@decoplante.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 pt-5 pr-5 ">
+                        <ul>
 
-                                <li><i class="fas fa-users fa-cart-plus"></i>Qui nous sommes</li>
-                                <li><i class="fas fa-cart-plus pr-2"></i>Boutique en ligne</li>
-                                <li><i class="fas fa-check-double fa-cart-plus"></i>Réalisations</li>
+                            <li><i class="fas fa-users fa-cart-plus"></i>Qui nous sommes</li>
+                            <li><i class="fas fa-cart-plus pr-2"></i>Boutique en ligne</li>
+                            <li><i class="fas fa-check-double fa-cart-plus"></i>Réalisations</li>
 
-                            </ul>
-                        </div>
-                        <div class="col-md-3 text-center pt-5">
-                            <a><i class="fab fa-facebook fa-fa pr-2"></i></a>
-                            <a><i class="fab fa-instagram-square fa-fa pr-2"></i></a>
-                            <a><i class="fab fa-twitter-square fa-fa"></i></a>
-                        </div>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 text-center pt-5">
+                        <a><i class="fab fa-facebook fa-fa pr-2"></i></a>
+                        <a><i class="fab fa-instagram-square fa-fa pr-2"></i></a>
+                        <a><i class="fab fa-twitter-square fa-fa"></i></a>
+                    </div>
 
-                        <div class="col-md-3">
-                            <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br></h5>
-                            <div class="bt text-center"><button><h2>SOUMETTRE</h2></button></div>
-                        </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                        <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br></h5>
+                        <div class="bt text-center"><button class="but-soum-foot"><h2>SOUMETTRE</h2></button></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </footer>
 <script src="js/app.js"></script>
 

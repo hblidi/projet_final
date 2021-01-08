@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../wamp64/www/portefolio/monPortefolio/wp-content/themes/monpremiertheme" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,7 +43,8 @@
       <updated>1609273230210</updated>
       <workItem from="1609273231545" duration="3199000" />
       <workItem from="1609797379626" duration="14482000" />
-      <workItem from="1610043795100" duration="618000" />
+      <workItem from="1610043795100" duration="2331000" />
+      <workItem from="1610065137902" duration="3735000" />
     </task>
     <servers />
   </component>
@@ -51,9 +52,16 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="262" key="FileChooserDialogImpl" timestamp="1609845918169">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="1208" y="-812" key="FileChooserDialogImpl" timestamp="1610123736334">
+      <screen x="468" y="-1080" width="1920" height="1040" />
     </state>
+    <state x="740" y="268" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610046890723" />
+    <state x="1208" y="-812" key="FileChooserDialogImpl/0.0.1500.960/468.-1080.1920.1040@468.-1080.1920.1040" timestamp="1610123736334" />
     <state x="740" y="262" key="FileChooserDialogImpl/1920.0.1920.1016/0.0.1920.1016/-1920.0.1536.824@0.0.1920.1016" timestamp="1609845918169" />
+    <state x="740" y="268" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1610065189770" />
+    <state x="630" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1610065111838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="630" y="229" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1610065111838" />
   </component>
 </project>

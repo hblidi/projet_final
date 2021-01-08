@@ -1,6 +1,6 @@
 
 
-body{
+.background_contact{
     background-image: url("../image/1194724.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -13,8 +13,14 @@ h1{
     font-size: 3rem;
     color: #132402;
 }
-span{
+label span{
     color: #f12131;
+}
+h2 span{
+    color: #f12131;
+}
+span{
+    color: white;
 }
 .bordure{
     border-radius: 25px;
@@ -32,9 +38,13 @@ span{
     box-shadow:  6px -6px 12px #23311a,
     -6px 6px 12px #334726;
     color: white;
-    font-size: 20px;
 
 
+
+}
+.boutonsoumettre, h2{
+    color: #000000;
+    font-size: 25px;
 }
 .cart_con{
     background-color: #d1cac2;
@@ -48,4 +58,117 @@ hr{
     border-width: 2px;
     border-color: #203b06;
 
+}
+.burger-text{
+    color: #000000;
+}
+
+img{
+    width: 650px;
+    height: 550px;
+}
+
+/*  *****************************************************************************/
+@media screen and (max-width: 320px) {
+
+  .bordure{
+      font-size: 9px;
+  }
+    h2{
+       font-size: 0.75rem;
+
+    }
+    h5, h1{
+       font-size: 1.5rem;
+    }
+    img{
+        width: 1020px;
+        height: 550px;
+    }
+    h5{
+        text-align: center;
+        color: #14551d;
+        padding-top: 30px;
+
+
+    }
+    .open-main-nav{
+        font-size: 9px;
+    }
+    .adresse, .icon-list{
+        margin-left: 60px;
+
+    }
+    button {
+        padding: 3px 14px;
+        color: white;
+
+        }
+    .bt{
+        margin-bottom: 100px;
+    }
+    body{
+        background-color: #999188;
+    }
+    footer{
+       background-image: url("../image/footer3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .footer{
+        padding-top: 0px;
+        padding-bottom: 200px;
+    }
+    li{
+        font-size: 10px;
+    }
+    .fa-cart-plus {
+        font-size: 10px;
+
+    }
+    .titrefooter {
+
+        font-size: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .bordure{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .adresse, .icon-list{
+        margin-left: 180px;
+
+    }
+    li, .fa-cart-plus{
+        font-size: 25px;
+    }
+    .titrefooter{
+        font-size: 30px;
+    }
+     button {
+        padding: 19px 47px;
+        color: white;
+
+    }
+
+    footer{
+        background-image: url("../image/footer3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .boutonsoumettre{
+        padding: 19px 39px;
+        font-size: 32px;
+    }
 }

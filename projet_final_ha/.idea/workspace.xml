@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projet_final_abdou" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../w3.css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -70,7 +70,8 @@
       <workItem from="1609784735738" duration="16432000" />
       <workItem from="1609935642000" duration="15552000" />
       <workItem from="1609969623285" duration="7498000" />
-      <workItem from="1610032667444" duration="8700000" />
+      <workItem from="1610032667444" duration="19650000" />
+      <workItem from="1610065192819" duration="25871000" />
     </task>
     <servers />
   </component>
@@ -82,13 +83,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1609428537814" />
-    <state x="680" y="255" key="FileChooserDialogImpl" timestamp="1610043792536">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1148" y="-825" key="FileChooserDialogImpl" timestamp="1610129869030">
+      <screen x="468" y="-1080" width="1920" height="1040" />
     </state>
     <state x="680" y="249" key="FileChooserDialogImpl/-1920.0.1536.813/1920.0.1920.1040/0.0.1920.1016@0.0.1920.1016" timestamp="1609800680196" />
     <state x="2600" y="255" key="FileChooserDialogImpl/-1920.0.1536.813/1920.0.1920.1040/0.0.1920.1016@1920.0.1920.1040" timestamp="1608909418956" />
-    <state x="680" y="255" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610043792536" />
+    <state x="680" y="255" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610105322240" />
     <state x="2600" y="255" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1609273228889" />
+    <state x="1148" y="-825" key="FileChooserDialogImpl/0.0.1500.960/468.-1080.1920.1040@468.-1080.1920.1040" timestamp="1610129869029" />
     <state x="531" y="235" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1608736635919" />
     <state x="680" y="249" key="FileChooserDialogImpl/1920.0.1920.1016/0.0.1920.1016/-1920.0.1536.824@0.0.1920.1016" timestamp="1609845504819" />
     <state x="680" y="255" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1608939041647" />
