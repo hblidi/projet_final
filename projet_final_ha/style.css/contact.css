@@ -1,4 +1,19 @@
 
+/* projet final */
+/* par Hadia Blidi */
+/* Le 19-06-2020 */
+@font-face{
+    src: url("../fonts/Aladin-Regular.ttf");
+    font-family: Aladin-Regular;
+
+}
+@font-face {
+    src: url("../fonts/YesevaOne-Regular.ttf");
+    font-family: YesevaOne-Regular;
+}
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
 
 .background_contact{
     background-image: url("../image/1194724.jpg");
@@ -7,6 +22,13 @@
     background-size: cover;
 
 }
+.contact p{
+    font-family: Roboto;
+    font-size: 2rem;
+    color: black;
+    padding-left: 1520px;
+}
+
 
 h1{
     font-family: Aladin;
@@ -18,6 +40,13 @@ label span{
 }
 h2 span{
     color: #f12131;
+}
+h2{
+    color: black;
+}
+.but-soum-foot{
+    color: #fffdfd;
+    font-size: 2rem;
 }
 span{
     color: white;
@@ -42,10 +71,7 @@ span{
 
 
 }
-.boutonsoumettre, h2{
-    color: #000000;
-    font-size: 25px;
-}
+
 .cart_con{
     background-color: #d1cac2;
     margin-top: 100px;
@@ -66,6 +92,9 @@ hr{
 img{
     width: 650px;
     height: 550px;
+}
+.boutonsoumettre{
+    font-size: 2rem;
 }
 
 /*  *****************************************************************************/
@@ -136,6 +165,14 @@ img{
 
 
 @media only screen and (max-width: 768px){
+
+    .image-mobile{
+        background-image: url("../image/image4.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
     .bordure{
         font-size: 18px;
     }
@@ -145,10 +182,9 @@ img{
     h1{
         font-size: 2.5rem;
     }
-    .adresse, .icon-list{
-        margin-left: 180px;
 
-    }
+
+
     li, .fa-cart-plus{
         font-size: 25px;
     }
@@ -170,5 +206,8 @@ img{
     .boutonsoumettre{
         padding: 19px 39px;
         font-size: 32px;
+    }
+    #bouton{
+        color: white;
     }
 }

@@ -89,47 +89,14 @@
     </div>
 
 
-<!--carousel mobile -->
-<div class="container-fluid carousel-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none">
-    <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-            <div id="demo" class="carousel slide" data-ride="carousel">
-
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="image/plants-4572694.jpg" alt="Los Angeles" width="1920" height="1080">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image/plants-4572694.jpg" alt="Chicago" width="1920" height="1080">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image/plants-4572694.jpg" alt="New York" width="1920" height="1080">
-                    </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <div><h5>DÉCO&PLANTE</h5></div>
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
+<!-- banniere mobile -->
+<div class="container-fluid  d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <div class="row image-mobile">
+        <div class="col-md-12 col-sm-12">
+            <h5 class="titre_mobile">DÉCO&PLANTE</h5>
         </div>
     </div>
 </div>
-
-
-
 
 <div class="container-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block">
     <div class="container-fluid">
@@ -184,10 +151,15 @@
 
 <div class="container-fluid pt-5">
     <div class="row">
-
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 imgSalon">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 textSalon d-none d-sm-block d-md-block d-lg-none d-xl-none">
+            <h2 class="titreSalon">cuisine</h2>
+            <p class="pr-5 pl-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                type specimen book. It has survived not only five centuries..</p>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 imgSalon">
             <img src="image/cuisine.jpg" class="image-cusine" alt="cuisine"></div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 textSalon">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 textSalon d-none d-sm-none d-md-none d-lg-block d-xl-block">
             <h2 class="titreSalon">cuisine</h2>
             <p class="pr-5 pl-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -200,10 +172,10 @@
     <div class="row">
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pot">
-            <img src="image/pot-pieds-bois-2.jpg">
+            <img src="image/pot-pieds-bois-2.jpg" alt="pot-en-bois" class="pot-en-bois">
         </div>
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pot">
-            <img src="image/pot-pieds-bois-3.jpg">
+            <img src="image/pot-pieds-bois-3.jpg" alt="pot-en-bois" class="pot-en-bois">
         </div>
     </div>
 </div>
@@ -216,7 +188,7 @@
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                 type specimen book. It has survived not only five centuries..</p>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 imgSalon"><img src="image/salle_debain.jpg"></div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 imgSalon"><img src="image/salle_debain.jpg" alt="salle-debain" class="salle-debain"></div>
     </div>
 </div>
 
@@ -233,49 +205,47 @@
 
 
 
-<footer class="pt-5 ">
-    <div class="container-fluid pt-5 pl-5 ">
+<footer>
+    <div class="container-fluid">
         <div class="row footer ">
-            <div class="col-md-12 col-sm-12 col-12 pt-5 pb-5">
-                <div class="container pt-5 pb-5 ">
-                    <div class="row">
-                        <div class="col-md-3 adresse">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                <div class="row contenufooter">
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 adresse">
 
-                            <ul>
-                                <li>Deco&Plante</li>
-                                <li>111, rue St-Charles, Montréal</li>
-                                <li>Tél.: (450) 555-7711</li>
-                                <li>Sans-frais: 1-877-430-8888</li>
-                                <li>Fax.: (450) 333-3759</li>
-                                <li>info@decoplante.com</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 pt-5 pr-5 ">
-                            <ul>
+                        <ul>
+                            <li>Deco&Plante</li>
+                            <li>111, rue St-Charles, Montréal</li>
+                            <li>Tél.: (450) 555-7711</li>
+                            <li>Sans-frais: 1-877-430-8888</li>
+                            <li>Fax.: (450) 333-3759</li>
+                            <li>info@decoplante.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 texte-icon">
+                        <ul>
 
-                                <li><i class="fas fa-users fa-cart-plus"></i>Qui nous sommes</li>
-                                <li><i class="fas fa-cart-plus pr-2"></i>Boutique en ligne</li>
-                                <li><i class="fas fa-check-double fa-cart-plus"></i>Réalisations</li>
+                            <li><i class="fas fa-users fa-cart-plus"></i>Qui nous sommes</li>
+                            <li><i class="fas fa-cart-plus pr-2"></i>Boutique en ligne</li>
+                            <li><i class="fas fa-check-double fa-cart-plus"></i>Réalisations</li>
 
-                            </ul>
-                        </div>
-                        <div class="col-md-3 text-center pt-5">
-                            <a><i class="fab fa-facebook fa-fa pr-2"></i></a>
-                            <a><i class="fab fa-instagram-square fa-fa pr-2"></i></a>
-                            <a><i class="fab fa-twitter-square fa-fa"></i></a>
-                        </div>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 text-center ">
+                        <a><i class="fab fa-facebook fa-fa pr-2"></i></a>
+                        <a><i class="fab fa-instagram-square fa-fa pr-2"></i></a>
+                        <a><i class="fab fa-twitter-square fa-fa"></i></a>
+                    </div>
 
-                        <div class="col-md-3">
-                            <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br></h5>
-                            <div class="bt text-center"><button class="but-soum-foot"><h2>SOUMETTRE</h2></button></div>
-                        </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                        <h5 class="titrefooter">PARLEZ-NOUS DE <br> VOTRE PROJET <br></h5>
+                        <div class="bt text-center"><button class="but-soum-foot"><h2>SOUMETTRE</h2></button></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </footer>
+
 
 <script src="https://kit.fontawesome.com/09b879714b.js" crossorigin="anonymous"></script>
 <script src="js/app.js"></script>

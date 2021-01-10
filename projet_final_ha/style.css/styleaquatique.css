@@ -1,3 +1,21 @@
+/* projet final */
+/* par Hadia Blidi */
+/* Le 19-06-2020 */
+@font-face{
+    src: url("../fonts/Aladin-Regular.ttf");
+    font-family: Aladin-Regular;
+
+}
+@font-face {
+    src: url("../fonts/YesevaOne-Regular.ttf");
+    font-family: YesevaOne-Regular;
+}
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -84,7 +102,7 @@
 }
 .d1 h5{
     font-family: Aladin;
-    font-size: 4.5rem;
+    font-size: 8rem;
     text-align: center;
     color: #e3e3e3;
     padding-bottom: 100px;
@@ -128,5 +146,23 @@
     }
     50% {
         background-position: Calc(-70vw - 40px) 50%;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .image-mobile{
+        background-image: url("../image/water-lily.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .titre_mobile{
+        font-family: Aladin;
+        font-size: 80px;
+        color: white;
+    }
+    .open-main-nav{
+        background-color: white;
+        opacity: .7;
     }
 }

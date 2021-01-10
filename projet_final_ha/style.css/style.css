@@ -3,16 +3,23 @@
 /* par Hadia Blidi */
 /* Le 19-06-2020 */
 @font-face{
-    src: url("../fonts/Aladin-Regular");
+    src: url("../fonts/Aladin-Regular.ttf");
     font-family: Aladin-Regular;
 
 }
 @font-face {
-    src: url("../fonts/YesevaOne-Regular");
+    src: url("../fonts/YesevaOne-Regular.ttf");
     font-family: YesevaOne-Regular;
 }
+@font-face {
+src: url("../fonts/Montserrat-Regular.ttf");
+}
 
-
+.image-formulaire{
+    background-image: url("../image/footer2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 button{
     padding: 10px 25px;
@@ -57,9 +64,9 @@ input[type="checkbox"].icon{
 }
 .contact p{
     font-family: Roboto;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
-    padding-left: 950px;
+    padding-left: 1620px;
 }
 .contact h1{
     font-family: Aladin;
@@ -153,7 +160,7 @@ h1{
 
   }
 h2{
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: Roboto;
 
 }
@@ -164,7 +171,7 @@ h3{
 }
 h5{
     font-family: Aladin;
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     text-align: center;
     color: #132402;
     padding-bottom: 30px;
@@ -173,7 +180,7 @@ h5{
 
 .services{
     font-family: Aladin;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color:#132402;
 }
 
@@ -301,7 +308,7 @@ a:hover{
 
     line-height: 80px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 .menu ul ul {
@@ -328,7 +335,7 @@ a:hover{
 
 }
 #menu-main-menu li a {
-    font-family: "Yeseva One";
+    font-family: Montserrat;
     color: #f6f8f4;
     text-decoration: none;
 
@@ -516,8 +523,13 @@ footer{
     background-size: cover;
 
 }
+.contenufooter{
+    margin: 10px;
+    margin-left: 30px;
+    padding-bottom: 150px;
+}
 .footer{
-    padding-top: 224px;
+    padding-top: 484px;
 }
 .but-soum-foot{
     padding: 10px 25px;
@@ -537,14 +549,14 @@ footer{
 }
 
 .titrefooter{
-    font-family:"Yeseva One";
-    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-size: 3rem;
     color: #fdfbfb;
 }
 
 .adresse ul, li {
     font-family: "Montserrat";
-    font-size: 18px;
+    font-size: 28px;
    list-style: none;
     color: #fafcfa;
 
@@ -556,9 +568,10 @@ footer{
 
 }
  .fab{
-    font-size: 50px;
+    font-size: 95px;
     z-index: auto;
     color: #fdfcfc;
+     padding-left: 47px;
 
 }
  .fa-angle-double-up{
@@ -667,7 +680,7 @@ iframe{
 }
 .d1 h5{
     font-family: Aladin;
-    font-size: 4.5rem;
+    font-size: 8rem;
     text-align: center;
     color: #284b03;
     padding-bottom: 100px;
@@ -744,6 +757,11 @@ iframe{
         width: 250px;
         height: 250px;
     }
+    iframe{
+        width: 240px;
+        height: 160px;
+
+    }
 
 }
 
@@ -753,6 +771,12 @@ iframe{
     .position {
         margin-top: -112px;
         margin-bottom: 75px;
+    }
+    .contact p{
+        font-family: Roboto;
+        font-size: 2rem;
+        color: black;
+        padding-left: 1620px;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -769,19 +793,16 @@ iframe{
     }
 
     h5{
-        text-align: center;
+
         color: #14551d;
         padding-top: 30px;
 
 
     }
     .open-main-nav{
-        font-size: 9px;
+        font-size: 15px;
     }
-    .adresse, .icon-list{
-        margin-left: 60px;
 
-    }
     button {
         padding: 3px 14px;
         color: white;
@@ -798,9 +819,10 @@ iframe{
         background-size: cover;
     }
     .footer{
-        padding-top: 0px;
-        padding-bottom: 200px;
+        padding-bottom: 0px;
+
     }
+
     li{
         font-size: 10px;
     }
@@ -808,9 +830,25 @@ iframe{
         font-size: 10px;
 
     }
-    .titrefooter {
+    .adresse ul, li{
+        font-size: 7px;
+    }
+    .titrefooter{
+        font-family: Montserrat;
 
-        font-size: 15px;
+    }
+    .image-mobile{
+        background-image: url("../image/plants-45.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .titre_mobile{
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .burger{
+        height: 2.5px;
     }
 
 }
@@ -826,22 +864,52 @@ iframe{
     h1{
         font-size: 2.5rem;
     }
-    .adresse, .icon-list{
-        margin-left: 180px;
 
-    }
     li, .fa-cart-plus{
-        font-size: 25px;
+        font-size: 16px;
     }
     .titrefooter{
-        font-size: 30px;
+        font-family: Montserrat;
+        font-size: 40px;
+        padding-top: 50px;
     }
     button {
-        padding: 19px 47px;
-        color: white;
+        padding: 4px 20px;
+
 
     }
+    .adresse ul, li{
+        font-size: 28px;
+        padding-left: 3px;
+        text-align: center;
 
+
+
+    }
+    .contenufooter {
+        padding-top: 350px;
+        padding-bottom: 150px;
+    }
+
+   .texte-icon{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .adresse{
+        padding-bottom: 15px;
+    }
+    .titre_mobile{
+        padding-top: 300px;
+        padding-bottom: 100px;
+    }
+
+    .footer{
+        padding-bottom: 700px;
+
+    }
+    .footer{
+        padding-top: 0px;
+    }
     footer{
         background-image: url("../image/footer3.jpg");
         background-repeat: no-repeat;
@@ -852,6 +920,16 @@ iframe{
         padding: 19px 39px;
         font-size: 32px;
     }
+    .image-mobile{
+        background-image: url("../image/plants-45.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .macrame{
+        width: 330px;
+        height: 500px;
+    }
 }
 
 
@@ -860,8 +938,9 @@ iframe{
 .ml5 {
     position: relative;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 3.5em;
     color: #fffcfc;
+    padding-left: 9rem;
 }
 
 .ml5 .text-wrapper {

@@ -15,12 +15,11 @@ function validerFormulaire(){
             codePermise = true;
     }
     if(codePermise === false){
-        alert("le catégorie non permis !!!");
+        alert("le code regional non permis !!!");
     }
 
     let categorie = document.getElementById("categorie");
 
-    let categoriepPermise= false;
 
 
     switch (categorie.value) {
@@ -36,7 +35,7 @@ function validerFormulaire(){
         case "salle de bain":
             categoriepPermise = true;
             break;
-        case "terrasse et jardins" :
+        case "Terrasse et Jardins" :
             categoriepPermise = true;
             break;
         case "Entrée" :
@@ -44,13 +43,14 @@ function validerFormulaire(){
             break;
         case "Autre" :
             categoriepPermise = true;
-
+        default:  alert("la catégorie non permise !!!");
     }
+
     if(categoriepPermise === false){
-        alert("le catégorie non permis !!!");
+        alert("la catégorie non permise !!!");
     }
 
-    if(codePermise && categoriepPermise){
+   if( codePermise && categoriepPermise){
         return true;
     }
     else{

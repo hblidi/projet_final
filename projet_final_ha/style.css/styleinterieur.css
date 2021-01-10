@@ -1,17 +1,52 @@
+
+
+/* projet final */
+/* par Hadia Blidi */
+/* Le 19-06-2020 */
+@font-face{
+    src: url("../fonts/Aladin-Regular.ttf");
+    font-family: Aladin-Regular;
+
+}
+@font-face {
+    src: url("../fonts/YesevaOne-Regular.ttf");
+    font-family: YesevaOne-Regular;
+}
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
 
 }
+p{
+    font-family: Montserrat;
+    font-size: 1.5rem;
+}
+
+.titreSalon{
+    font-size: 6rem;
+}
 .image-cusine{
-    height: 650px;
-    width: 750px;
+    height: 100%;
+    width: 100%;
 }
 .main {
     height: 100vh;
     width: 100vw;
     position: relative;
-
+}
+.entree{
+    height: 100%;
+    width: 100%;
+}
+.salle-debain{
+    height: 100%;
+    width: 100%;
 }
 .bacimage {
     padding-top: 150px;
@@ -88,7 +123,7 @@
 }
 .d1 h5{
     font-family: Aladin;
-    font-size: 4.5rem;
+    font-size: 8rem;
     text-align: center;
     color: #243d03;
     padding-bottom: 100px;
@@ -141,5 +176,122 @@ button h2{
 }
 
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .image-mobile{
+        background-image: url("../image/3a681036e49fcb8432529678467d7fa2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .bordure{
+        font-size: 9px;
+    }
+    h2{
+        font-size: 0.75rem;
+
+    }
+    h5, h1{
+        font-size: 1.5rem;
+    }
+
+    h5{
+
+        color: #14551d;
+        padding-top: 30px;
+
+
+    }
+    .open-main-nav{
+        font-size: 15px;
+    }
+
+    button {
+        padding: 3px 14px;
+        color: white;
+
+    }
+    .bt{
+        margin-bottom: 100px;
+    }
+    .footer{
+        padding-bottom: 700px;
+
+    }
+    footer{
+        background-image: url("../image/footer3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    li{
+        font-size: 10px;
+    }
+    .fa-cart-plus {
+        font-size: 10px;
+
+    }
+    .adresse ul, li{
+        font-size: 7px;
+    }
+    .titrefooter{
+        font-family: Montserrat;
+
+    }
+    .adresse ul, li{
+        font-size: 28px;
+        padding-left: 3px;
+        text-align: center;
+
+
+
+    }
+    .but-soum-foot, h2{
+        padding: 9px 29px;
+        font-size: 24px;
+    }
+    .texte-icon{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+
+    .burger{
+        height: 2.5px;
+    }
+    .pot-en-bois{
+        width: 100%;
+        height: 100%;
+    }
+    .salle-debain{
+        width: 100%;
+        height: 100%;
+    }
+    .image-cusine{
+        width: 100%;
+        height: 100%;
+    }
+    .textSalon{
+        padding-top: 0px;
+    }
+    .titre_mobile{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .pot-en-bois{
+        width: 100%;
+        height: 100%;
+    }
+    .salle-debain{
+        width: 100%;
+        height: 100%;
+    }
+    .image-cusine{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 
